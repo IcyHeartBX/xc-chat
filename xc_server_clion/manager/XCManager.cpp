@@ -65,7 +65,7 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                 XCChatMsg chatMsg;
                 bool flag = chatMsg.ParseFromArray(data + 4,dlen);
                 if(flag) {
-                    BroadcastChatMessage()
+                    BroadcastChatMessage(&chatMsg);
                 }
                 break;
 

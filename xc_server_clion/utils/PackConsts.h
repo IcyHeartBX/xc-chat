@@ -13,8 +13,8 @@ enum ROOM_SERVER{
 };
 
 enum ROOM_SERVER_ACK {
-    ALIVE_ACK       =   0x00,
-    LOGIN_ACK           =   0x01,
+    ALIVE_ACK           =   0x00,   //心跳返回
+    LOGIN_ACK           =   0x01,   //登录返回
     SERVER_CLOSE_ACK    =   0x02,
     CHAT_MESSAGE_ACK    =   0x03,
     USER_COUNT_ACK      =   0x04,
