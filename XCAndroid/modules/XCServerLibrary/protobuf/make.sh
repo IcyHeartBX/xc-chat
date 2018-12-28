@@ -1,0 +1,1 @@
+java -jar wire-compiler-2.1.1-jar-with-dependencies.jar --proto_path=.  --java_out=out  xc_protoc.proto

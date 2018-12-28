@@ -11,7 +11,98 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a453993-d23a-436f-82f8-78e1040fd82b" name="Default Changelist" comment="" />
+    <list default="true" id="8a453993-d23a-436f-82f8-78e1040fd82b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/androidTest/java/com/pix/xcandroid/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/XCManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/test/java/com/pix/xcandroid/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/libs/protobuf_wire-runtime-2.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/make.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/ChatPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCAlive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCAliveACK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCChatMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCChatMsgBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCLoginACK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCLogout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCOnlineCountBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCServerCloseBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCSystemMsgBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/wire-compiler-2.1.1-jar-with-dependencies.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/xc_protoc.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/androidTest/java/com/pix/xcserverlibrary/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/IXCServerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerReadData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerWriteData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/constants/XCServerConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/pack/BaseStruct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/pack/PackConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/ChatPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCAlive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCAliveACK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCChatMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCChatMsgBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCLoginACK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCLogout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCOnlineCountBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCServerCloseBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCSystemMsgBRO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/tcp/ITcpSocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/tcp/TcpNIOSocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/tcp/TcpSocketListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/utils/ByteBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/utils/LogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/utils/NetUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/test/java/com/pix/xcserverlibrary/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XCAndroid/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/xc_server_clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/xc_server_clion" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,12 +165,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="1" />
+          <entry key="cpp" value="8" />
+          <entry key="h" value="23" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="1" />
+          <entry key="ObjectiveC" value="31" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -89,8 +183,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manager/XCManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2115">
-              <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#44#66#0" expanded="true" />
               </folding>
@@ -119,8 +213,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/PackConsts.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="255">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -128,7 +222,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manager/XCManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="345">
               <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding>
                 <element signature="e#116#135#0" expanded="true" />
@@ -164,6 +258,9 @@
       <replace>XC</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -174,9 +271,9 @@
         <option value="$PROJECT_DIR$/utils/NetUtils.h" />
         <option value="$PROJECT_DIR$/utils/PackUtils.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/utils/PackConsts.h" />
         <option value="$PROJECT_DIR$/manager/XCManager.h" />
         <option value="$PROJECT_DIR$/protoc/xc_protoc.proto" />
+        <option value="$PROJECT_DIR$/utils/PackConsts.h" />
         <option value="$PROJECT_DIR$/manager/XCManager.cpp" />
       </list>
     </option>
@@ -193,6 +290,7 @@
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -204,7 +302,17 @@
           <expand>
             <path>
               <item name="xc_server_clion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="xc_server_clion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xc_server_clion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xc_server_clion" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xc_server_clion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xc_server_clion" type="462c0819:PsiDirectoryNode" />
+              <item name="protoc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,30 +368,38 @@
       <workItem from="1545900496983" duration="2614000" />
       <workItem from="1545907804014" duration="5111000" />
       <workItem from="1545962665265" duration="93000" />
-      <workItem from="1545962865028" duration="227000" />
+      <workItem from="1545962865028" duration="3386000" />
     </task>
+    <task id="LOCAL-00001" summary="调试聊天消息广播">
+      <created>1545983681398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545983681398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8045000" />
+    <option name="totallyTimeSpent" value="11204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24878837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32930514" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32930514" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32930514" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22809668" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.20996979" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32930514" />
@@ -298,6 +414,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="调试聊天消息广播" />
+    <option name="LAST_COMMIT_MESSAGE" value="调试聊天消息广播" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tcp/tcp_poll_server.c">
@@ -349,16 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/XCManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
-          <folding>
-            <element signature="e#44#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protoc/xc_protoc.pb.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34005">
@@ -373,16 +483,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/PackConsts.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="540">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manager/XCManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="345">
           <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
           <folding>
             <element signature="e#116#135#0" expanded="true" />
@@ -390,12 +503,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/utils/PackConsts.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/XCManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#44#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
