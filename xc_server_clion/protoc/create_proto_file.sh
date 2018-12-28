@@ -1,0 +1,1 @@
+protoc --cpp_out=. xc_protoc.proto

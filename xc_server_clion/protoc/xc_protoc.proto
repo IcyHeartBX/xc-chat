@@ -1,0 +1,71 @@
+syntax = "proto2";
+package xc.protoc;
+// ==================================================
+// 基础功能
+// ==================================================
+
+// 心跳请求
+message XCAlive {
+    optional uint64 clientTime = 1;//客户端时间戳
+}
+// 心跳返回
+message XCAliveACK {
+	optional uint64 serverTime = 1;//服务端时间戳
+}
+
+// 请求登录
+message XCLogin
+{
+	required int64 uid = 1;//用户ID
+	required int64 roomId = 2; //房间ID
+	optional string token = 3; //用户token
+	required bool reconnect = 4; // 是否重连  fasle情况 会清除缓存数据
+	required string name = 5; //用户昵称
+}
+
+// 登陆返回
+message XCLoginACK
+{
+	required sint32 result = 1;  //0成功 1校验失败
+	optional bool isManager = 2; //是否是管理员
+	optional sint64 onlineUsers= 3; // 在线用户数
+}
+
+// 请求登出 无返回
+message XCLogout{}
+
+// 服务器通知连接关闭
+message XCServerCloseBRO{
+	optional string msg = 1;//关闭消息
+}
+
+// 场景玩家信息
+message ChatPlayer {
+	optional sint64 id = 1;
+	optional string name = 2;
+	optional string headImg = 3;
+}
+
+// 广播当前人数
+message XCOnlineCountBRO {
+	optional sint64 count= 1; // 当前人数
+}
+
+
+// 发送聊天(公聊) 2016年06月30日20:41:53 更改
+message XCChatMsg{
+	optional sint32 type = 1; //类型 0聊天 其他的客户端自定义
+	optional string content = 2; //内容
+}
+
+// (公聊)消息返回 2016年06月30日20:41:53 更改
+message XCChatMsgBRO {
+	optional ChatPlayer player = 1; //发送者
+	optional XCChatMsg chat = 2;
+}
+
+//系统消息
+message XCSystemMsgBRO {
+	optional sint32 type = 1; //类型 0系统消息 1http透传消息
+	repeated string content = 2; //内容
+}
