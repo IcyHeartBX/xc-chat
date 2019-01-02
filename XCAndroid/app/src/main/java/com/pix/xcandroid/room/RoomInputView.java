@@ -21,7 +21,6 @@ import java.util.Random;
 
 public class RoomInputView extends RelativeLayout implements View.OnClickListener  {
     private static final String TAG = RoomInputView.class.getSimpleName();
-    private static final int[] HINT = {R.string.li_room_message_hint_1, R.string.li_room_message_hint_2, R.string.li_room_message_hint_3};
     private static final int TEXT_CHAT_LENGTH = 60;
     private static final int MSG_MAX_TIME = 1000;
 
@@ -134,7 +133,7 @@ public class RoomInputView extends RelativeLayout implements View.OnClickListene
 
         switch (type) {
             case 1:
-                mInputET.setHint(HINT[mRandom.nextInt(HINT.length)]);
+                mInputET.setHint("请输入聊天内容!");
                 break;
         }
     }
@@ -148,7 +147,6 @@ public class RoomInputView extends RelativeLayout implements View.OnClickListene
             }
         } else {
             Utils.Companion.hideSoftInput(mInputET, getContext());
-            setVisibility(GONE);
         }
     }
 

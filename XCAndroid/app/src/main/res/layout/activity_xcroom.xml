@@ -11,36 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="52dp"/>
-    <RelativeLayout
-        android:layout_alignParentBottom="true"
-        android:id="@+id/rl_keyboard"
-        android:layout_width="105dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="8dp"
-        android:background="@drawable/li_bg_button_room_chat">
+        android:layout_marginBottom="56dp"/>
 
-        <ImageView
-            android:id="@+id/iv_keyboard"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/li_ic_room_bottom_keyboard"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/iv_keyboard"
-            android:layout_marginLeft="5dp"
-            android:layout_centerVertical="true"
-            android:text="Talk..."
-            android:textSize="14sp"
-            android:textColor="#000"/>
-    </RelativeLayout>
     <com.pix.xcandroid.room.RoomInputView
         android:id="@+id/room_input_view"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
-        android:visibility="gone"/>
+        />
 
 </RelativeLayout>

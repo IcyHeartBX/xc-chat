@@ -11,91 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a453993-d23a-436f-82f8-78e1040fd82b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/XCManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/bean/ChatUserInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/IXCRoomView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/MessagePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/MessagePanelAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/RoomInputView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/RoomServerListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/XCRoomActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/XCRoomPresenter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/utils/Utils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/utils/WeakReferenceHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/widget/LevelLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/widget/PicAndTextView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_guardian_diamond.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_guardian_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_guardian_silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_ic_room_bottom_keyboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_message_heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_room_system_message_laba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_user_zhou_bang_flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/li_user_zong_bang_flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/user_level_icon_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/user_level_icon_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/user_level_icon_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/user_level_icon_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable-xhdpi/user_level_icon_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/li_alpha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/li_bg_button_room_chat.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/li_bg_message_chat.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/li_bg_message_other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/li_bg_popwindow_from_bottom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/li_room_msg_edit_cursor_color.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/user_level_bg_level_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/user_level_bg_level_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/user_level_bg_level_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/user_level_bg_level_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/drawable/user_level_bg_level_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/activity_xcroom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/layout_room_message_chat.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/li_layout_level.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/li_layout_messagepanel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/li_layout_room_input_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/ids.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/XCManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/ChatPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCAlive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCAliveACK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCChatMsg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCChatMsgBRO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCLoginACK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCLogout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCOnlineCountBRO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCServerCloseBRO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/out/com/pix/xcserverlibrary/protobuf/XCSystemMsgBRO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/xc_protoc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/protobuf/xc_protoc.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/IXCServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/IXCServerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerReadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerReadData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerWriteData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerWriteData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCChatMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCChatMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCChatMsgBRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCChatMsgBRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCSystemMsgBRO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/protobuf/XCSystemMsgBRO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/tcp/TcpNIOSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/tcp/TcpNIOSocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/xc_server_clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/xc_server_clion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/XCManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager/XCManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protoc/xc_protoc.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/xc_protoc.pb.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protoc/xc_protoc.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/xc_protoc.pb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protoc/xc_protoc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/xc_protoc.proto" afterDir="false" />
-    </list>
+    <list default="true" id="8a453993-d23a-436f-82f8-78e1040fd82b" name="Default Changelist" comment="调试聊天消息广播" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -408,7 +324,7 @@
       <workItem from="1545962665265" duration="93000" />
       <workItem from="1545962865028" duration="3904000" />
       <workItem from="1546393999470" duration="16000" />
-      <workItem from="1546394064540" duration="4487000" />
+      <workItem from="1546394064540" duration="4824000" />
     </task>
     <task id="LOCAL-00001" summary="调试聊天消息广播">
       <created>1545983681398</created>
@@ -421,7 +337,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16225000" />
+    <option name="totallyTimeSpent" value="16562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,14 +350,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20113085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20113085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42598188" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42598188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39879155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
