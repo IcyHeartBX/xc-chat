@@ -125,7 +125,7 @@ xc_server_clion: CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o
 xc_server_clion: CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o
 xc_server_clion: CMakeFiles/xc_server_clion.dir/build.make
 xc_server_clion: /usr/local/hiredis/libhiredis.a
-xc_server_clion: /usr/local/protobuf/lib/libprotobuf.dylib
+xc_server_clion: /usr/local/protobuf/lib/libprotobuf.a
 xc_server_clion: CMakeFiles/xc_server_clion.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable xc_server_clion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xc_server_clion.dir/link.txt --verbose=$(VERBOSE)
