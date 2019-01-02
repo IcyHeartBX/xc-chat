@@ -52,13 +52,14 @@ message XCOnlineCountBRO {
 }
 
 
-// 发送聊天(公聊) 2016年06月30日20:41:53 更改
+// 发送聊天(公聊)
 message XCChatMsg{
 	optional sint32 type = 1; //类型 0聊天 其他的客户端自定义
-	optional string content = 2; //内容
+	optional ChatPlayer player = 2;
+	optional string content = 3; //内容
 }
 
-// (公聊)消息返回 2016年06月30日20:41:53 更改
+// (公聊)消息返回
 message XCChatMsgBRO {
 	optional ChatPlayer player = 1; //发送者
 	optional XCChatMsg chat = 2;

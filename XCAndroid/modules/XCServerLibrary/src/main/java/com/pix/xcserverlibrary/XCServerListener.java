@@ -35,11 +35,13 @@ public interface XCServerListener {
     public void onOnlineUsersCount(long count);
 
     /**
-     *
-     * @param sender
-     * @param msg
+     * 聊天回调
+     * @param senderId 发送者id
+     * @param senderName 发送者name
+     * @param senderHeadImg 发送者头像
+     * @param msg 消息
      */
-    public void onChatMsg(String sender, String msg);
+    public void onChatMsg(long senderId,String senderName,String senderHeadImg, String msg);
 
     /**
      * 系统消息

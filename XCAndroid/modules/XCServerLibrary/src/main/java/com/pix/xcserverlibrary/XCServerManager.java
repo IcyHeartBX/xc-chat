@@ -120,8 +120,8 @@ public class XCServerManager implements TcpSocketListener, XCServerConstants, XC
     }
 
     @Override
-    public void sendChatMsg(String msg) {
-        sendServerData(mRoomServerWriteData._sendChatMsg(msg));
+    public void sendChatMsg(long uid,String uname,String headImg,String msg) {
+        sendServerData(mRoomServerWriteData._sendChatMsg(uid,uname,headImg,msg));
     }
 
     @Override
@@ -324,31 +324,31 @@ public class XCServerManager implements TcpSocketListener, XCServerConstants, XC
         } else if (message instanceof XCLoginACK) { //登录回包
             onLoginRcv((XCLoginACK) message);
         } else if (message instanceof XCServerCloseBRO) { // 房间关闭
-            XCServerCloseBRO ssc2 = (XCServerCloseBRO) message;
+            XCServerCloseBRO serverCloseBRO = (XCServerCloseBRO) message;
             if (null != xcServerListener) {
-                xcServerListener.onServerDisconnect(ssc2.msg);
+                xcServerListener.onServerDisconnect(serverCloseBRO.msg);
             }
         } else if (message instanceof XCOnlineCountBRO) { // 用户数
-            XCOnlineCountBRO ssc000004 = (XCOnlineCountBRO) message;
-            if (null != xcServerListener && null != ssc000004.count) {
-                xcServerListener.onOnlineUsersCount(ssc000004.count);
+            XCOnlineCountBRO onlineCountBRO = (XCOnlineCountBRO) message;
+            if (null != xcServerListener && null != onlineCountBRO.count) {
+                xcServerListener.onOnlineUsersCount(onlineCountBRO.count);
             }
         } else if (message instanceof XCChatMsgBRO) { // 公屏聊天消息
-            XCChatMsgBRO ssc000006 = (XCChatMsgBRO) message;
-            if (null != xcServerListener && null != ssc000006.player && null != ssc000006.chat) {
-                ChatPlayer player = ssc000006.player;
-                XCChatMsg ssc6 = ssc000006.chat;
-                xcServerListener.onChatMsg(player.name, ssc6.content);
+            XCChatMsgBRO chatMsgBRO = (XCChatMsgBRO) message;
+            if (null != xcServerListener && null != chatMsgBRO.player && null != chatMsgBRO.chat) {
+                ChatPlayer player = chatMsgBRO.player;
+                XCChatMsg ssc6 = chatMsgBRO.chat;
+                xcServerListener.onChatMsg(player.id,player.name,player.headImg ,ssc6.content);
             }
         }
         else if (message instanceof XCSystemMsgBRO) { // 系统消息
-            XCSystemMsgBRO ssc000018 = (XCSystemMsgBRO) message;
+            XCSystemMsgBRO sysMsgBRO = (XCSystemMsgBRO) message;
             if (xcServerListener != null) {
                 int type = 0;
-                if (null != ssc000018.type) {
-                    type = ssc000018.type;
+                if (null != sysMsgBRO.type) {
+                    type = sysMsgBRO.type;
                 }
-                xcServerListener.onSysMessage(type, ssc000018.content);
+                xcServerListener.onSysMessage(type, sysMsgBRO.content);
             }
         }
     }

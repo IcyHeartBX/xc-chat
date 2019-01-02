@@ -2,6 +2,7 @@ package com.pix.xcserverlibrary;
 
 
 import com.pix.xcserverlibrary.constants.XCServerConstants;
+import com.pix.xcserverlibrary.protobuf.ChatPlayer;
 import com.pix.xcserverlibrary.protobuf.XCAlive;
 import com.pix.xcserverlibrary.protobuf.XCChatMsg;
 import com.pix.xcserverlibrary.protobuf.XCLogin;
@@ -58,8 +59,14 @@ public class XCServerWriteData implements XCServerConstants {
     }
 
     // 发送聊天 06
-    public byte[] _sendChatMsg(String msg) {
+    public byte[] _sendChatMsg(long uid,String uname,String headImg,String msg) {
+        ChatPlayer.Builder pBuilder = new ChatPlayer.Builder();
+        pBuilder.id = uid;
+        pBuilder.name = uname;
+        pBuilder.headImg = headImg;
         XCChatMsg.Builder builder = new XCChatMsg.Builder();
+        builder.type = 0;
+        builder.player = pBuilder.build();
         builder.content(msg);
         byte[] body = XCChatMsg.ADAPTER.encode(builder.build());
         ByteBuffer byteBuffer = new ByteBuffer();

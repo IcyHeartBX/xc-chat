@@ -21,7 +21,7 @@
 
 namespace protobuf_xc_5fprotoc_2eproto {
 extern PROTOBUF_INTERNAL_EXPORT_protobuf_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ChatPlayer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_XCChatMsg;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_XCChatMsg;
 }  // namespace protobuf_xc_5fprotoc_2eproto
 namespace xc {
 namespace protoc {
@@ -206,8 +206,9 @@ static void InitDefaultsXCChatMsg() {
   ::xc::protoc::XCChatMsg::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCChatMsg =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCChatMsg}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_XCChatMsg =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXCChatMsg}, {
+      &protobuf_xc_5fprotoc_2eproto::scc_info_ChatPlayer.base,}};
 
 static void InitDefaultsXCChatMsgBRO() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -332,7 +333,9 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, type_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, player_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, content_),
+  2,
   1,
   0,
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, _has_bits_),
@@ -363,9 +366,9 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROT
   { 45, 51, sizeof(::xc::protoc::XCServerCloseBRO)},
   { 52, 60, sizeof(::xc::protoc::ChatPlayer)},
   { 63, 69, sizeof(::xc::protoc::XCOnlineCountBRO)},
-  { 70, 77, sizeof(::xc::protoc::XCChatMsg)},
-  { 79, 86, sizeof(::xc::protoc::XCChatMsgBRO)},
-  { 88, 95, sizeof(::xc::protoc::XCSystemMsgBRO)},
+  { 70, 78, sizeof(::xc::protoc::XCChatMsg)},
+  { 81, 88, sizeof(::xc::protoc::XCChatMsgBRO)},
+  { 90, 97, sizeof(::xc::protoc::XCSystemMsgBRO)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -412,15 +415,16 @@ void AddDescriptorsImpl() {
       "Users\030\003 \001(\022\"\n\n\010XCLogout\"\037\n\020XCServerClose"
       "BRO\022\013\n\003msg\030\001 \001(\t\"7\n\nChatPlayer\022\n\n\002id\030\001 \001"
       "(\022\022\014\n\004name\030\002 \001(\t\022\017\n\007headImg\030\003 \001(\t\"!\n\020XCO"
-      "nlineCountBRO\022\r\n\005count\030\001 \001(\022\"*\n\tXCChatMs"
-      "g\022\014\n\004type\030\001 \001(\021\022\017\n\007content\030\002 \001(\t\"Y\n\014XCCh"
-      "atMsgBRO\022%\n\006player\030\001 \001(\0132\025.xc.protoc.Cha"
-      "tPlayer\022\"\n\004chat\030\002 \001(\0132\024.xc.protoc.XCChat"
-      "Msg\"/\n\016XCSystemMsgBRO\022\014\n\004type\030\001 \001(\021\022\017\n\007c"
-      "ontent\030\002 \003(\t"
+      "nlineCountBRO\022\r\n\005count\030\001 \001(\022\"Q\n\tXCChatMs"
+      "g\022\014\n\004type\030\001 \001(\021\022%\n\006player\030\002 \001(\0132\025.xc.pro"
+      "toc.ChatPlayer\022\017\n\007content\030\003 \001(\t\"Y\n\014XCCha"
+      "tMsgBRO\022%\n\006player\030\001 \001(\0132\025.xc.protoc.Chat"
+      "Player\022\"\n\004chat\030\002 \001(\0132\024.xc.protoc.XCChatM"
+      "sg\"/\n\016XCSystemMsgBRO\022\014\n\004type\030\001 \001(\021\022\017\n\007co"
+      "ntent\030\002 \003(\t"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 572);
+      descriptor, 611);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "xc_protoc.proto", &protobuf_RegisterTypes);
 }
@@ -2690,9 +2694,12 @@ void XCOnlineCountBRO::InternalSwap(XCOnlineCountBRO* other) {
 // ===================================================================
 
 void XCChatMsg::InitAsDefaultInstance() {
+  ::xc::protoc::_XCChatMsg_default_instance_._instance.get_mutable()->player_ = const_cast< ::xc::protoc::ChatPlayer*>(
+      ::xc::protoc::ChatPlayer::internal_default_instance());
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCChatMsg::kTypeFieldNumber;
+const int XCChatMsg::kPlayerFieldNumber;
 const int XCChatMsg::kContentFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
@@ -2712,13 +2719,20 @@ XCChatMsg::XCChatMsg(const XCChatMsg& from)
   if (from.has_content()) {
     content_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.content_);
   }
+  if (from.has_player()) {
+    player_ = new ::xc::protoc::ChatPlayer(*from.player_);
+  } else {
+    player_ = NULL;
+  }
   type_ = from.type_;
   // @@protoc_insertion_point(copy_constructor:xc.protoc.XCChatMsg)
 }
 
 void XCChatMsg::SharedCtor() {
   content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  type_ = 0;
+  ::memset(&player_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&type_) -
+      reinterpret_cast<char*>(&player_)) + sizeof(type_));
 }
 
 XCChatMsg::~XCChatMsg() {
@@ -2728,6 +2742,7 @@ XCChatMsg::~XCChatMsg() {
 
 void XCChatMsg::SharedDtor() {
   content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete player_;
 }
 
 void XCChatMsg::SetCachedSize(int size) const {
@@ -2751,8 +2766,14 @@ void XCChatMsg::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    content_.ClearNonDefaultToEmptyNoArena();
+  if (cached_has_bits & 3u) {
+    if (cached_has_bits & 0x00000001u) {
+      content_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(player_ != NULL);
+      player_->Clear();
+    }
   }
   type_ = 0;
   _has_bits_.Clear();
@@ -2783,10 +2804,22 @@ bool XCChatMsg::MergePartialFromCodedStream(
         break;
       }
 
-      // optional string content = 2;
+      // optional .xc.protoc.ChatPlayer player = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_player()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional string content = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) ==
+            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_content()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2827,18 +2860,24 @@ void XCChatMsg::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional sint32 type = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteSInt32(1, this->type(), output);
   }
 
-  // optional string content = 2;
+  // optional .xc.protoc.ChatPlayer player = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, this->_internal_player(), output);
+  }
+
+  // optional string content = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->content().data(), static_cast<int>(this->content().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
       "xc.protoc.XCChatMsg.content");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->content(), output);
+      3, this->content(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2857,11 +2896,18 @@ void XCChatMsg::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional sint32 type = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteSInt32ToArray(1, this->type(), target);
   }
 
-  // optional string content = 2;
+  // optional .xc.protoc.ChatPlayer player = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        2, this->_internal_player(), deterministic, target);
+  }
+
+  // optional string content = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->content().data(), static_cast<int>(this->content().length()),
@@ -2869,7 +2915,7 @@ void XCChatMsg::SerializeWithCachedSizes(
       "xc.protoc.XCChatMsg.content");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        2, this->content(), target);
+        3, this->content(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2889,12 +2935,19 @@ size_t XCChatMsg::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
-    // optional string content = 2;
+  if (_has_bits_[0 / 32] & 7u) {
+    // optional string content = 3;
     if (has_content()) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->content());
+    }
+
+    // optional .xc.protoc.ChatPlayer player = 2;
+    if (has_player()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *player_);
     }
 
     // optional sint32 type = 1;
@@ -2933,12 +2986,15 @@ void XCChatMsg::MergeFrom(const XCChatMsg& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 7u) {
     if (cached_has_bits & 0x00000001u) {
       set_has_content();
       content_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.content_);
     }
     if (cached_has_bits & 0x00000002u) {
+      mutable_player()->::xc::protoc::ChatPlayer::MergeFrom(from.player());
+    }
+    if (cached_has_bits & 0x00000004u) {
       type_ = from.type_;
     }
     _has_bits_[0] |= cached_has_bits;
@@ -2971,6 +3027,7 @@ void XCChatMsg::InternalSwap(XCChatMsg* other) {
   using std::swap;
   content_.Swap(&other->content_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(player_, other->player_);
   swap(type_, other->type_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);

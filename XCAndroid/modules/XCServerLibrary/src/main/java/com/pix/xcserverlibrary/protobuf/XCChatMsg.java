@@ -18,7 +18,7 @@ import java.lang.StringBuilder;
 import okio.ByteString;
 
 /**
- * 发送聊天(公聊) 2016年06月30日20:41:53 更改
+ * 发送聊天(公聊)
  */
 public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
   public static final ProtoAdapter<XCChatMsg> ADAPTER = new ProtoAdapter_XCChatMsg();
@@ -38,22 +38,29 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
   )
   public final Integer type;
 
+  @WireField(
+      tag = 2,
+      adapter = "com.pix.xcserverlibrary.protobuf.ChatPlayer#ADAPTER"
+  )
+  public final ChatPlayer player;
+
   /**
    * 内容
    */
   @WireField(
-      tag = 2,
+      tag = 3,
       adapter = "com.squareup.wire.ProtoAdapter#STRING"
   )
   public final String content;
 
-  public XCChatMsg(Integer type, String content) {
-    this(type, content, ByteString.EMPTY);
+  public XCChatMsg(Integer type, ChatPlayer player, String content) {
+    this(type, player, content, ByteString.EMPTY);
   }
 
-  public XCChatMsg(Integer type, String content, ByteString unknownFields) {
+  public XCChatMsg(Integer type, ChatPlayer player, String content, ByteString unknownFields) {
     super(ADAPTER, unknownFields);
     this.type = type;
+    this.player = player;
     this.content = content;
   }
 
@@ -61,6 +68,7 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
   public Builder newBuilder() {
     Builder builder = new Builder();
     builder.type = type;
+    builder.player = player;
     builder.content = content;
     builder.addUnknownFields(unknownFields());
     return builder;
@@ -73,6 +81,7 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
     XCChatMsg o = (XCChatMsg) other;
     return Internal.equals(unknownFields(), o.unknownFields())
         && Internal.equals(type, o.type)
+        && Internal.equals(player, o.player)
         && Internal.equals(content, o.content);
   }
 
@@ -82,6 +91,7 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
     if (result == 0) {
       result = unknownFields().hashCode();
       result = result * 37 + (type != null ? type.hashCode() : 0);
+      result = result * 37 + (player != null ? player.hashCode() : 0);
       result = result * 37 + (content != null ? content.hashCode() : 0);
       super.hashCode = result;
     }
@@ -92,12 +102,15 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
   public String toString() {
     StringBuilder builder = new StringBuilder();
     if (type != null) builder.append(", type=").append(type);
+    if (player != null) builder.append(", player=").append(player);
     if (content != null) builder.append(", content=").append(content);
     return builder.replace(0, 2, "XCChatMsg{").append('}').toString();
   }
 
   public static final class Builder extends Message.Builder<XCChatMsg, Builder> {
     public Integer type;
+
+    public ChatPlayer player;
 
     public String content;
 
@@ -112,6 +125,11 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
       return this;
     }
 
+    public Builder player(ChatPlayer player) {
+      this.player = player;
+      return this;
+    }
+
     /**
      * 内容
      */
@@ -122,7 +140,7 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
 
     @Override
     public XCChatMsg build() {
-      return new XCChatMsg(type, content, buildUnknownFields());
+      return new XCChatMsg(type, player, content, buildUnknownFields());
     }
   }
 
@@ -134,14 +152,16 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
     @Override
     public int encodedSize(XCChatMsg value) {
       return (value.type != null ? ProtoAdapter.SINT32.encodedSizeWithTag(1, value.type) : 0)
-          + (value.content != null ? ProtoAdapter.STRING.encodedSizeWithTag(2, value.content) : 0)
+          + (value.player != null ? ChatPlayer.ADAPTER.encodedSizeWithTag(2, value.player) : 0)
+          + (value.content != null ? ProtoAdapter.STRING.encodedSizeWithTag(3, value.content) : 0)
           + value.unknownFields().size();
     }
 
     @Override
     public void encode(ProtoWriter writer, XCChatMsg value) throws IOException {
       if (value.type != null) ProtoAdapter.SINT32.encodeWithTag(writer, 1, value.type);
-      if (value.content != null) ProtoAdapter.STRING.encodeWithTag(writer, 2, value.content);
+      if (value.player != null) ChatPlayer.ADAPTER.encodeWithTag(writer, 2, value.player);
+      if (value.content != null) ProtoAdapter.STRING.encodeWithTag(writer, 3, value.content);
       writer.writeBytes(value.unknownFields());
     }
 
@@ -152,7 +172,8 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
       for (int tag; (tag = reader.nextTag()) != -1;) {
         switch (tag) {
           case 1: builder.type(ProtoAdapter.SINT32.decode(reader)); break;
-          case 2: builder.content(ProtoAdapter.STRING.decode(reader)); break;
+          case 2: builder.player(ChatPlayer.ADAPTER.decode(reader)); break;
+          case 3: builder.content(ProtoAdapter.STRING.decode(reader)); break;
           default: {
             FieldEncoding fieldEncoding = reader.peekFieldEncoding();
             Object value = fieldEncoding.rawProtoAdapter().decode(reader);
@@ -167,6 +188,7 @@ public final class XCChatMsg extends Message<XCChatMsg, XCChatMsg.Builder> {
     @Override
     public XCChatMsg redact(XCChatMsg value) {
       Builder builder = value.newBuilder();
+      if (builder.player != null) builder.player = ChatPlayer.ADAPTER.redact(builder.player);
       builder.clearUnknownFields();
       return builder.build();
     }

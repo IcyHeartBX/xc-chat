@@ -54,5 +54,5 @@ public interface IXCServerService {
      * 发送公屏聊天消息
      * @param msg
      */
-    public void sendChatMsg(String msg);
+    public void sendChatMsg(long uid,String uname,String headImg,String msg);
 }

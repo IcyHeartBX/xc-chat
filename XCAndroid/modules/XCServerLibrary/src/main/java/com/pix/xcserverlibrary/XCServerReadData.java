@@ -16,8 +16,6 @@ public class XCServerReadData implements XCServerConstants {
     private static final String TAG = "XCServerReadData";
     private byte[] cache = new byte[1024 * 100];
     private int cachePosition = 0;
-
-
     private OnReceiveMessage onReceiveMessage;
 
     public XCServerReadData() {
@@ -29,8 +27,6 @@ public class XCServerReadData implements XCServerConstants {
     }
 
     public void unpack(byte[] datas) throws Exception {
-
-
         System.arraycopy(datas, 0, cache, cachePosition, datas.length);
         cachePosition = cachePosition + datas.length;
         LogUtils.d(TAG, "unpack(),读取数据：当前cachePosition " + cachePosition + ",datas length " + datas.length);

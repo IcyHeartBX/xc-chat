@@ -158,20 +158,25 @@ void XCManager::BroadcastChatMessage(void * content) {
     if(NULL == content) {
         return ;
     }
+    cout<<"============"<<endl;
     XCChatMsg * chatMsg = static_cast<XCChatMsg*>(content);
     XCChatMsgBRO chatMsgBRO;
     ChatPlayer * player = chatMsgBRO.mutable_player();
-    player->set_headimg("img");
-    player->set_id(66666L);
-    player->set_name("LiMing");
-    chatMsgBRO.set_allocated_chat(chatMsg);
+
+    auto chat = chatMsgBRO.mutable_chat();
+    chat->set_content(chatMsg->content());
+    chat->set_type(chatMsg->type());
+
+    player->set_headimg(chatMsg->player().headimg());
+    player->set_id(chatMsg->player().id());
+    player->set_name(chatMsg->player().name());
     unsigned short length = chatMsgBRO.ByteSize();
     unsigned char* buf = new unsigned char[length];
     // 序列化
     chatMsgBRO.SerializePartialToArray(buf,length);
     unsigned char data[MAXLINE];
     int datalen;
-    Pack(data, &datalen ,length ,ROOM_SERVER_ACK::USER_COUNT_ACK,buf);
+    Pack(data, &datalen ,length ,ROOM_SERVER_ACK::CHAT_MESSAGE_ACK,buf);
     tcp_poll_server_broadcast_data(serverHandler,data,datalen);
 
 }

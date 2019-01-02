@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_level"
+    android:layout_width="wrap_content"
+    android:layout_height="12dp"
+    android:background="@mic_connect_frame/user_level_bg_level_1"
+    android:drawableLeft="@mic_connect_frame/user_level_icon_1"
+    android:drawablePadding="3dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:text="3"
+    android:textColor="#ffffff"
+    android:textSize="7sp" />-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_level"
+    android:layout_width="25dp"
+    android:layout_height="12dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:background="@drawable/user_level_bg_level_1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_level_icon"
+        android:src="@drawable/user_level_icon_1"/>
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="8sp" />
+
+</RelativeLayout>

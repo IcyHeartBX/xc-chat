@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!--等级背景色值-->
+    <color name="user_level_bg_level_1">#92cb00</color>
+    <color name="user_level_bg_level_2">#fd8d08</color>
+    <color name="user_level_bg_level_3">#3da8d0</color>
+    <color name="user_level_bg_level_4">#fe2c58</color>
+    <color name="user_level_bg_level_5">#eb6844</color>
 </resources>

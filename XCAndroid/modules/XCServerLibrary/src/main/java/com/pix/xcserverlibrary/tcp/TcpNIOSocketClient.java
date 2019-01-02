@@ -237,7 +237,6 @@ public class TcpNIOSocketClient implements ITcpSocketClient{
                                     break;
                                 }
                             }
-//                            } while (data != null);
                             close();
                             break;
                         }

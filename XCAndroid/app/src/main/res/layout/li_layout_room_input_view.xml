@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_message_input"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/li_bg_popwindow_from_bottom">
+
+
+    <TextView
+        android:id="@+id/btn_send_message_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="Send"
+        android:textColor="#9858f8"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_input_message_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/btn_send_message_panel"
+        android:background="@drawable/li_alpha"
+        android:focusable="true"
+        android:hint="@string/li_room_message_hint_1"
+        android:maxLength="150"
+        android:textColor="#918fa5"
+        android:textColorHint="#918FA5"
+        android:textCursorDrawable="@drawable/li_room_msg_edit_cursor_color"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1221,10 +1221,10 @@ class XCChatMsg : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // optional string content = 2;
+  // optional string content = 3;
   bool has_content() const;
   void clear_content();
-  static const int kContentFieldNumber = 2;
+  static const int kContentFieldNumber = 3;
   const ::std::string& content() const;
   void set_content(const ::std::string& value);
   #if LANG_CXX11
@@ -1235,6 +1235,18 @@ class XCChatMsg : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* mutable_content();
   ::std::string* release_content();
   void set_allocated_content(::std::string* content);
+
+  // optional .xc.protoc.ChatPlayer player = 2;
+  bool has_player() const;
+  void clear_player();
+  static const int kPlayerFieldNumber = 2;
+  private:
+  const ::xc::protoc::ChatPlayer& _internal_player() const;
+  public:
+  const ::xc::protoc::ChatPlayer& player() const;
+  ::xc::protoc::ChatPlayer* release_player();
+  ::xc::protoc::ChatPlayer* mutable_player();
+  void set_allocated_player(::xc::protoc::ChatPlayer* player);
 
   // optional sint32 type = 1;
   bool has_type() const;
@@ -1247,6 +1259,8 @@ class XCChatMsg : public ::google::protobuf::Message /* @@protoc_insertion_point
  private:
   void set_has_type();
   void clear_has_type();
+  void set_has_player();
+  void clear_has_player();
   void set_has_content();
   void clear_has_content();
 
@@ -1254,6 +1268,7 @@ class XCChatMsg : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr content_;
+  ::xc::protoc::ChatPlayer* player_;
   ::google::protobuf::int32 type_;
   friend struct ::protobuf_xc_5fprotoc_2eproto::TableStruct;
 };
@@ -2143,13 +2158,13 @@ inline void XCOnlineCountBRO::set_count(::google::protobuf::int64 value) {
 
 // optional sint32 type = 1;
 inline bool XCChatMsg::has_type() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void XCChatMsg::set_has_type() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
 }
 inline void XCChatMsg::clear_has_type() {
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline void XCChatMsg::clear_type() {
   type_ = 0;
@@ -2165,7 +2180,65 @@ inline void XCChatMsg::set_type(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:xc.protoc.XCChatMsg.type)
 }
 
-// optional string content = 2;
+// optional .xc.protoc.ChatPlayer player = 2;
+inline bool XCChatMsg::has_player() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void XCChatMsg::set_has_player() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void XCChatMsg::clear_has_player() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void XCChatMsg::clear_player() {
+  if (player_ != NULL) player_->Clear();
+  clear_has_player();
+}
+inline const ::xc::protoc::ChatPlayer& XCChatMsg::_internal_player() const {
+  return *player_;
+}
+inline const ::xc::protoc::ChatPlayer& XCChatMsg::player() const {
+  const ::xc::protoc::ChatPlayer* p = player_;
+  // @@protoc_insertion_point(field_get:xc.protoc.XCChatMsg.player)
+  return p != NULL ? *p : *reinterpret_cast<const ::xc::protoc::ChatPlayer*>(
+      &::xc::protoc::_ChatPlayer_default_instance_);
+}
+inline ::xc::protoc::ChatPlayer* XCChatMsg::release_player() {
+  // @@protoc_insertion_point(field_release:xc.protoc.XCChatMsg.player)
+  clear_has_player();
+  ::xc::protoc::ChatPlayer* temp = player_;
+  player_ = NULL;
+  return temp;
+}
+inline ::xc::protoc::ChatPlayer* XCChatMsg::mutable_player() {
+  set_has_player();
+  if (player_ == NULL) {
+    auto* p = CreateMaybeMessage<::xc::protoc::ChatPlayer>(GetArenaNoVirtual());
+    player_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:xc.protoc.XCChatMsg.player)
+  return player_;
+}
+inline void XCChatMsg::set_allocated_player(::xc::protoc::ChatPlayer* player) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == NULL) {
+    delete player_;
+  }
+  if (player) {
+    ::google::protobuf::Arena* submessage_arena = NULL;
+    if (message_arena != submessage_arena) {
+      player = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, player, submessage_arena);
+    }
+    set_has_player();
+  } else {
+    clear_has_player();
+  }
+  player_ = player;
+  // @@protoc_insertion_point(field_set_allocated:xc.protoc.XCChatMsg.player)
+}
+
+// optional string content = 3;
 inline bool XCChatMsg::has_content() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
