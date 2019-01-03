@@ -6,31 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/pix/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.c
-tcp_poll_server.h
-/home/pix/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
-stdio.h
--
-stdlib.h
--
-string.h
--
-errno.h
--
-netinet/in.h
--
-sys/socket.h
--
-poll.h
--
-unistd.h
--
-sys/types.h
--
-arpa/inet.h
--
-pthread.h
--
-
-/home/pix/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
-

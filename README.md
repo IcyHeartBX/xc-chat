@@ -16,7 +16,16 @@
 编译项目`xc_server_clion`，需引入动态库，参考:[cmake引入库](http://tangsanzang.tk/2018/12/27/clioncmakelinklib/)
 
 - `protobuf`
-- `hiredis`
+
+- `pthread`
+
+pthread库用进入参考：[CMake引入pthread库](http://tangsanzang.tk/2019/01/02/cmakepthread/)
+
+在不同平台，protobuf文件需重新生成，不然会报错。
+
+执行项目中`protoc/create_proto_file.sh`脚本即可。
+
+
 
 ## 2、Android客户端
 
