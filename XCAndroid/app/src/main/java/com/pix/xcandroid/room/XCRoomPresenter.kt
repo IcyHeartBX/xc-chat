@@ -6,7 +6,8 @@ import com.pix.xcandroid.bean.ChatUserInfo
 class XCRoomPresenter : RoomServerListener{
     var xcManager = XCManager.instance
 
-    val IP:String = "192.168.1.109"
+//    val IP:String = "192.168.26.120"
+    val IP:String = "96.45.176.19"
     val PORT:Int = 7777
     var roomView:IXCRoomView? = null
     var userName:String="未命名"

@@ -31,4 +31,6 @@ pthread库用进入参考：[CMake引入pthread库](http://tangsanzang.tk/2019/0
 
 初步完成了聊天室功能，多个用户可进入聊天室，实时聊天
 
+示例APK下载：https://github.com/IcyHeartBX/xc-chat/releases
+
 ![](http://tangsanzang.tk/file/img/2019010215292331223.png)
