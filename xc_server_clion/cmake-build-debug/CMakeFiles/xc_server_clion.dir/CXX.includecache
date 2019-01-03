@@ -6,36 +6,44 @@
 
 #IncludeRegexTransform: 
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.cpp
-XCManager.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.h
-../protoc/xc_protoc.pb.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
-../utils/NetUtils.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/NetUtils.h
-../utils/PackConsts.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackConsts.h
-../utils/PackUtils.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackUtils.h
-../tcp/tcp_poll_server.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
+/home/pix/dev/code/xc-chat/xc_server_clion/main.cpp
+iostream
+-
+pthread.h
+-
+manager/XCManager.h
+/home/pix/dev/code/xc-chat/xc_server_clion/manager/XCManager.h
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.h
+/home/pix/dev/code/xc-chat/xc_server_clion/manager/XCManager.cpp
+XCManager.h
+/home/pix/dev/code/xc-chat/xc_server_clion/manager/XCManager.h
+../protoc/xc_protoc.pb.h
+/home/pix/dev/code/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
+../utils/NetUtils.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/NetUtils.h
+../utils/PackConsts.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/PackConsts.h
+../utils/PackUtils.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/PackUtils.h
+../tcp/tcp_poll_server.h
+/home/pix/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
+
+/home/pix/dev/code/xc-chat/xc_server_clion/manager/XCManager.h
 iostream
 -
 pthread.h
 -
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.cc
+/home/pix/dev/code/xc-chat/xc_server_clion/protoc/xc_protoc.pb.cc
 xc_protoc.pb.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
+/home/pix/dev/code/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/stubs/port.h
--
 google/protobuf/io/coded_stream.h
+-
+google/protobuf/extension_set.h
 -
 google/protobuf/wire_format_lite_inl.h
 -
@@ -47,13 +55,19 @@ google/protobuf/reflection_ops.h
 -
 google/protobuf/wire_format.h
 -
-third_party/protobuf/version.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/third_party/protobuf/version.h
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
+/home/pix/dev/code/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
+limits
+-
 string
 -
-google/protobuf/stubs/common.h
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 google/protobuf/io/coded_stream.h
 -
@@ -77,18 +91,22 @@ google/protobuf/extension_set.h
 -
 google/protobuf/unknown_field_set.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
+/home/pix/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/NetUtils.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/NetUtils.h
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackConsts.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/PackConsts.h
 
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackUtils.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/PackUtils.h
 cstring
 -
 NetUtils.h
-/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/NetUtils.h
+/home/pix/dev/code/xc-chat/xc_server_clion/utils/NetUtils.h
 
 /usr/local/protobuf/include/google/protobuf/arena.h
 limits
@@ -101,9 +119,13 @@ typeinfo
 -
 google/protobuf/arena_impl.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/port.h
 -
 type_traits
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/arena_impl.h
@@ -115,9 +137,11 @@ google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/logging.h
 -
-google/protobuf/stubs/port.h
--
 sanitizer/asan_interface.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/arenastring.h
@@ -132,6 +156,10 @@ google/protobuf/stubs/fastmem.h
 google/protobuf/stubs/logging.h
 -
 google/protobuf/stubs/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/descriptor.h
@@ -148,6 +176,10 @@ google/protobuf/stubs/common.h
 google/protobuf/stubs/mutex.h
 -
 google/protobuf/stubs/once.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/extension_set.h
@@ -167,15 +199,31 @@ google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/logging.h
 -
-google/protobuf/stubs/once.h
+google/protobuf/parse_context.h
+-
+google/protobuf/io/coded_stream.h
+-
+google/protobuf/port.h
 -
 google/protobuf/repeated_field.h
+-
+google/protobuf/wire_format_lite.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/generated_enum_reflection.h
 string
 -
+google/protobuf/port.h
+-
 google/protobuf/generated_enum_util.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/generated_enum_util.h
@@ -197,7 +245,15 @@ google/protobuf/message.h
 -
 google/protobuf/metadata.h
 -
+google/protobuf/stubs/once.h
+-
+google/protobuf/port.h
+-
 google/protobuf/unknown_field_set.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/generated_message_table_driven.h
@@ -212,6 +268,10 @@ google/protobuf/message_lite.h
 google/protobuf/wire_format_lite.h
 -
 google/protobuf/wire_format_lite_inl.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/generated_message_util.h
@@ -229,39 +289,63 @@ google/protobuf/stubs/logging.h
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/stubs/once.h
+google/protobuf/parse_context.h
 -
 google/protobuf/has_bits.h
 -
 google/protobuf/implicit_weak_message.h
 -
-google/protobuf/map_entry_lite.h
--
 google/protobuf/message_lite.h
 -
+google/protobuf/stubs/once.h
+-
+google/protobuf/port.h
+-
 google/protobuf/wire_format_lite.h
+-
+google/protobuf/stubs/strutil.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/has_bits.h
 google/protobuf/stubs/common.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/implicit_weak_message.h
+string
+-
 google/protobuf/io/coded_stream.h
 -
 google/protobuf/arena.h
 -
 google/protobuf/message_lite.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/inlined_string_field.h
 string
 -
-google/protobuf/stubs/port.h
+utility
+-
+google/protobuf/port.h
 -
 google/protobuf/stubs/stringpiece.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/io/coded_stream.h
@@ -279,9 +363,13 @@ sys/param.h
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/port.h
 -
 google/protobuf/stubs/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/map.h
@@ -305,11 +393,19 @@ google/protobuf/map_type_handler.h
 -
 google/protobuf/stubs/hash.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/map_entry_lite.h
 assert.h
 -
+string
+-
 google/protobuf/stubs/casts.h
+-
+google/protobuf/parse_context.h
 -
 google/protobuf/arena.h
 -
@@ -319,17 +415,33 @@ google/protobuf/map.h
 -
 google/protobuf/map_type_handler.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/port.h
+-
+google/protobuf/wire_format_lite.h
 -
 google/protobuf/wire_format_lite_inl.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/map_field_lite.h
+type_traits
+-
+google/protobuf/io/coded_stream.h
+-
 google/protobuf/map.h
 -
 google/protobuf/map_entry_lite.h
 -
+google/protobuf/port.h
+-
 google/protobuf/wire_format_lite.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/map_type_handler.h
@@ -347,27 +459,43 @@ type_traits
 -
 vector
 -
-google/protobuf/arena.h
--
-google/protobuf/message_lite.h
+google/protobuf/stubs/casts.h
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/arena.h
+-
 google/protobuf/descriptor.h
+-
+google/protobuf/message_lite.h
+-
+google/protobuf/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/message_lite.h
 climits
 -
+string
+-
 google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/logging.h
 -
-google/protobuf/stubs/once.h
--
 google/protobuf/arena.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/stubs/once.h
+-
+google/protobuf/port.h
+-
+google/protobuf/stubs/strutil.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/metadata.h
@@ -377,22 +505,62 @@ google/protobuf/unknown_field_set.h
 -
 
 /usr/local/protobuf/include/google/protobuf/metadata_lite.h
+string
+-
 google/protobuf/stubs/common.h
 -
 google/protobuf/arena.h
 -
+google/protobuf/generated_message_util.h
+-
 google/protobuf/message_lite.h
 -
+google/protobuf/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
+
+/usr/local/protobuf/include/google/protobuf/parse_context.h
+cstring
+-
+string
+-
+google/protobuf/io/coded_stream.h
+-
+google/protobuf/port.h
+-
+google/protobuf/wire_format_lite.h
+-
+google/protobuf/stubs/strutil.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
+
+/usr/local/protobuf/include/google/protobuf/port.h
 google/protobuf/stubs/port.h
 -
+
+/usr/local/protobuf/include/google/protobuf/port_def.inc
+
+/usr/local/protobuf/include/google/protobuf/port_undef.inc
 
 /usr/local/protobuf/include/google/protobuf/reflection_ops.h
 google/protobuf/stubs/common.h
 -
 google/protobuf/message.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/repeated_field.h
+utility
+-
 algorithm
 -
 iterator
@@ -400,8 +568,6 @@ iterator
 limits
 -
 string
--
-google/protobuf/stubs/casts.h
 -
 google/protobuf/stubs/logging.h
 -
@@ -413,15 +579,15 @@ google/protobuf/implicit_weak_message.h
 -
 google/protobuf/message_lite.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/port.h
+-
+google/protobuf/stubs/casts.h
 -
 type_traits
 -
-
-/usr/local/protobuf/include/google/protobuf/stubs/callback.h
-type_traits
+google/protobuf/port_def.inc
 -
-google/protobuf/stubs/macros.h
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/stubs/casts.h
@@ -451,17 +617,15 @@ google/protobuf/stubs/macros.h
 -
 google/protobuf/stubs/platform_macros.h
 -
-google/protobuf/stubs/logging.h
--
-google/protobuf/stubs/mutex.h
--
-google/protobuf/stubs/callback.h
--
 exception
 -
 TargetConditionals.h
 -
 pthread.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/stubs/fastmem.h
@@ -473,53 +637,29 @@ string.h
 -
 google/protobuf/stubs/common.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/stubs/hash.h
 string.h
 -
 google/protobuf/stubs/common.h
 -
-ext/hash_map
--
-ext/hash_set
--
-backward/hash_map
--
-backward/hash_set
--
-hash_map
--
-hash_set
--
-hash_map
--
-hash_set
--
-hash_map
--
-hash_set
--
-hash_map
--
-hash_set
--
 unordered_map
 -
 unordered_set
--
-tr1/unordered_map
--
-tr1/unordered_set
--
-map
--
-set
 -
 
 /usr/local/protobuf/include/google/protobuf/stubs/logging.h
 google/protobuf/stubs/macros.h
 -
 google/protobuf/stubs/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/stubs/macros.h
@@ -531,6 +671,10 @@ mutex
 -
 google/protobuf/stubs/macros.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/stubs/once.h
 mutex
@@ -539,6 +683,8 @@ utility
 -
 
 /usr/local/protobuf/include/google/protobuf/stubs/platform_macros.h
+Availability.h
+-
 TargetConditionals.h
 -
 
@@ -559,6 +705,8 @@ stdint.h
 -
 google/protobuf/stubs/platform_macros.h
 -
+google/protobuf/port_def.inc
+-
 sys/param.h
 -
 endian.h
@@ -570,6 +718,8 @@ intrin.h
 libkern/OSByteOrder.h
 -
 byteswap.h
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/stubs/stringpiece.h
@@ -589,6 +739,24 @@ google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/hash.h
 -
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
+
+/usr/local/protobuf/include/google/protobuf/stubs/strutil.h
+stdlib.h
+-
+vector
+-
+google/protobuf/stubs/common.h
+-
+google/protobuf/stubs/stringpiece.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/unknown_field_set.h
 assert.h
@@ -601,7 +769,17 @@ google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/logging.h
 -
+google/protobuf/parse_context.h
+-
+google/protobuf/io/coded_stream.h
+-
 google/protobuf/message_lite.h
+-
+google/protobuf/port.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/wire_format.h
@@ -615,6 +793,12 @@ google/protobuf/message.h
 -
 google/protobuf/wire_format_lite.h
 -
+google/protobuf/stubs/casts.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
 
 /usr/local/protobuf/include/google/protobuf/wire_format_lite.h
 string
@@ -625,9 +809,13 @@ google/protobuf/io/coded_stream.h
 -
 google/protobuf/message_lite.h
 -
-google/protobuf/stubs/port.h
+google/protobuf/port.h
 -
 google/protobuf/repeated_field.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
 -
 
 /usr/local/protobuf/include/google/protobuf/wire_format_lite_inl.h
@@ -639,14 +827,18 @@ google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/logging.h
 -
+google/protobuf/io/coded_stream.h
+-
+google/protobuf/arenastring.h
+-
 google/protobuf/message_lite.h
 -
 google/protobuf/repeated_field.h
 -
 google/protobuf/wire_format_lite.h
 -
-google/protobuf/io/coded_stream.h
+google/protobuf/port_def.inc
 -
-google/protobuf/arenastring.h
+google/protobuf/port_undef.inc
 -
 

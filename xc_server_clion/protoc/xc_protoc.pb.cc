@@ -6,84 +6,67 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_xc_5fprotoc_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ChatPlayer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_XCChatMsg;
-}  // namespace protobuf_xc_5fprotoc_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ChatPlayer_xc_5fprotoc_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_xc_5fprotoc_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_XCChatMsg_xc_5fprotoc_2eproto;
 namespace xc {
 namespace protoc {
 class XCAliveDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCAlive>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCAlive> _instance;
 } _XCAlive_default_instance_;
 class XCAliveACKDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCAliveACK>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCAliveACK> _instance;
 } _XCAliveACK_default_instance_;
 class XCLoginDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCLogin>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCLogin> _instance;
 } _XCLogin_default_instance_;
 class XCLoginACKDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCLoginACK>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCLoginACK> _instance;
 } _XCLoginACK_default_instance_;
 class XCLogoutDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCLogout>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCLogout> _instance;
 } _XCLogout_default_instance_;
 class XCServerCloseBRODefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCServerCloseBRO>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCServerCloseBRO> _instance;
 } _XCServerCloseBRO_default_instance_;
 class ChatPlayerDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ChatPlayer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ChatPlayer> _instance;
 } _ChatPlayer_default_instance_;
 class XCOnlineCountBRODefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCOnlineCountBRO>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCOnlineCountBRO> _instance;
 } _XCOnlineCountBRO_default_instance_;
 class XCChatMsgDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCChatMsg>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCChatMsg> _instance;
 } _XCChatMsg_default_instance_;
 class XCChatMsgBRODefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCChatMsgBRO>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCChatMsgBRO> _instance;
 } _XCChatMsgBRO_default_instance_;
 class XCSystemMsgBRODefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XCSystemMsgBRO>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<XCSystemMsgBRO> _instance;
 } _XCSystemMsgBRO_default_instance_;
 }  // namespace protoc
 }  // namespace xc
-namespace protobuf_xc_5fprotoc_2eproto {
-static void InitDefaultsXCAlive() {
+static void InitDefaultsXCAlive_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -94,10 +77,10 @@ static void InitDefaultsXCAlive() {
   ::xc::protoc::XCAlive::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCAlive =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCAlive}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCAlive_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCAlive_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCAliveACK() {
+static void InitDefaultsXCAliveACK_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -108,10 +91,10 @@ static void InitDefaultsXCAliveACK() {
   ::xc::protoc::XCAliveACK::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCAliveACK =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCAliveACK}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCAliveACK_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCAliveACK_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCLogin() {
+static void InitDefaultsXCLogin_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -122,10 +105,10 @@ static void InitDefaultsXCLogin() {
   ::xc::protoc::XCLogin::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCLogin =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCLogin}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCLogin_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCLogin_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCLoginACK() {
+static void InitDefaultsXCLoginACK_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -136,10 +119,10 @@ static void InitDefaultsXCLoginACK() {
   ::xc::protoc::XCLoginACK::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCLoginACK =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCLoginACK}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCLoginACK_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCLoginACK_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCLogout() {
+static void InitDefaultsXCLogout_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -150,10 +133,10 @@ static void InitDefaultsXCLogout() {
   ::xc::protoc::XCLogout::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCLogout =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCLogout}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCLogout_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCLogout_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCServerCloseBRO() {
+static void InitDefaultsXCServerCloseBRO_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -164,10 +147,10 @@ static void InitDefaultsXCServerCloseBRO() {
   ::xc::protoc::XCServerCloseBRO::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCServerCloseBRO =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCServerCloseBRO}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCServerCloseBRO_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCServerCloseBRO_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsChatPlayer() {
+static void InitDefaultsChatPlayer_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -178,10 +161,10 @@ static void InitDefaultsChatPlayer() {
   ::xc::protoc::ChatPlayer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ChatPlayer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsChatPlayer}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ChatPlayer_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsChatPlayer_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCOnlineCountBRO() {
+static void InitDefaultsXCOnlineCountBRO_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -192,10 +175,10 @@ static void InitDefaultsXCOnlineCountBRO() {
   ::xc::protoc::XCOnlineCountBRO::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCOnlineCountBRO =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCOnlineCountBRO}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCOnlineCountBRO_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCOnlineCountBRO_xc_5fprotoc_2eproto}, {}};
 
-static void InitDefaultsXCChatMsg() {
+static void InitDefaultsXCChatMsg_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -206,11 +189,11 @@ static void InitDefaultsXCChatMsg() {
   ::xc::protoc::XCChatMsg::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_XCChatMsg =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXCChatMsg}, {
-      &protobuf_xc_5fprotoc_2eproto::scc_info_ChatPlayer.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_XCChatMsg_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsXCChatMsg_xc_5fprotoc_2eproto}, {
+      &scc_info_ChatPlayer_xc_5fprotoc_2eproto.base,}};
 
-static void InitDefaultsXCChatMsgBRO() {
+static void InitDefaultsXCChatMsgBRO_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -221,12 +204,12 @@ static void InitDefaultsXCChatMsgBRO() {
   ::xc::protoc::XCChatMsgBRO::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_XCChatMsgBRO =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsXCChatMsgBRO}, {
-      &protobuf_xc_5fprotoc_2eproto::scc_info_ChatPlayer.base,
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCChatMsg.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_XCChatMsgBRO_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsXCChatMsgBRO_xc_5fprotoc_2eproto}, {
+      &scc_info_ChatPlayer_xc_5fprotoc_2eproto.base,
+      &scc_info_XCChatMsg_xc_5fprotoc_2eproto.base,}};
 
-static void InitDefaultsXCSystemMsgBRO() {
+static void InitDefaultsXCSystemMsgBRO_xc_5fprotoc_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -237,127 +220,129 @@ static void InitDefaultsXCSystemMsgBRO() {
   ::xc::protoc::XCSystemMsgBRO::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_XCSystemMsgBRO =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCSystemMsgBRO}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_XCSystemMsgBRO_xc_5fprotoc_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsXCSystemMsgBRO_xc_5fprotoc_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_XCAlive.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCAliveACK.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCLogin.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCLoginACK.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCLogout.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCServerCloseBRO.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ChatPlayer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCOnlineCountBRO.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCChatMsg.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCChatMsgBRO.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_XCSystemMsgBRO.base);
+void InitDefaults_xc_5fprotoc_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_XCAlive_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCAliveACK_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCLogin_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCLoginACK_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCLogout_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCServerCloseBRO_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ChatPlayer_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCOnlineCountBRO_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCChatMsg_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCChatMsgBRO_xc_5fprotoc_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_XCSystemMsgBRO_xc_5fprotoc_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[11];
+::google::protobuf::Metadata file_level_metadata_xc_5fprotoc_2eproto[11];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_xc_5fprotoc_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_xc_5fprotoc_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCAlive, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCAlive, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_xc_5fprotoc_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCAlive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCAlive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCAlive, clienttime_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCAlive, clienttime_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCAliveACK, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCAliveACK, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCAliveACK, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCAliveACK, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCAliveACK, servertime_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCAliveACK, servertime_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, uid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, roomid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, token_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, reconnect_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogin, name_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, uid_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, roomid_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, token_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, reconnect_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogin, name_),
   2,
   3,
   0,
   4,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLoginACK, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLoginACK, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLoginACK, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLoginACK, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLoginACK, result_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLoginACK, ismanager_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLoginACK, onlineusers_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLoginACK, result_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLoginACK, ismanager_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLoginACK, onlineusers_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogout, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCLogout, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogout, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCLogout, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCServerCloseBRO, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCServerCloseBRO, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCServerCloseBRO, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCServerCloseBRO, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCServerCloseBRO, msg_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCServerCloseBRO, msg_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::ChatPlayer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::ChatPlayer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::ChatPlayer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::ChatPlayer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::ChatPlayer, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::ChatPlayer, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::ChatPlayer, headimg_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::ChatPlayer, id_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::ChatPlayer, name_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::ChatPlayer, headimg_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCOnlineCountBRO, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCOnlineCountBRO, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCOnlineCountBRO, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCOnlineCountBRO, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCOnlineCountBRO, count_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCOnlineCountBRO, count_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsg, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsg, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, player_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsg, content_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsg, type_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsg, player_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsg, content_),
   2,
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, player_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, chat_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, player_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCChatMsgBRO, chat_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, content_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, type_),
+  PROTOBUF_FIELD_OFFSET(::xc::protoc::XCSystemMsgBRO, content_),
   0,
   ~0u,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 6, sizeof(::xc::protoc::XCAlive)},
   { 7, 13, sizeof(::xc::protoc::XCAliveACK)},
   { 14, 24, sizeof(::xc::protoc::XCLogin)},
@@ -385,61 +370,45 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::xc::protoc::_XCSystemMsgBRO_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "xc_protoc.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_xc_5fprotoc_2eproto = {
+  {}, AddDescriptors_xc_5fprotoc_2eproto, "xc_protoc.proto", schemas,
+  file_default_instances, TableStruct_xc_5fprotoc_2eproto::offsets,
+  file_level_metadata_xc_5fprotoc_2eproto, 11, file_level_enum_descriptors_xc_5fprotoc_2eproto, file_level_service_descriptors_xc_5fprotoc_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_xc_5fprotoc_2eproto[] =
+  "\n\017xc_protoc.proto\022\txc.protoc\"\035\n\007XCAlive\022"
+  "\022\n\nclientTime\030\001 \001(\004\" \n\nXCAliveACK\022\022\n\nser"
+  "verTime\030\001 \001(\004\"V\n\007XCLogin\022\013\n\003uid\030\001 \002(\003\022\016\n"
+  "\006roomId\030\002 \002(\003\022\r\n\005token\030\003 \001(\t\022\021\n\treconnec"
+  "t\030\004 \002(\010\022\014\n\004name\030\005 \002(\t\"D\n\nXCLoginACK\022\016\n\006r"
+  "esult\030\001 \002(\021\022\021\n\tisManager\030\002 \001(\010\022\023\n\013online"
+  "Users\030\003 \001(\022\"\n\n\010XCLogout\"\037\n\020XCServerClose"
+  "BRO\022\013\n\003msg\030\001 \001(\t\"7\n\nChatPlayer\022\n\n\002id\030\001 \001"
+  "(\022\022\014\n\004name\030\002 \001(\t\022\017\n\007headImg\030\003 \001(\t\"!\n\020XCO"
+  "nlineCountBRO\022\r\n\005count\030\001 \001(\022\"Q\n\tXCChatMs"
+  "g\022\014\n\004type\030\001 \001(\021\022%\n\006player\030\002 \001(\0132\025.xc.pro"
+  "toc.ChatPlayer\022\017\n\007content\030\003 \001(\t\"Y\n\014XCCha"
+  "tMsgBRO\022%\n\006player\030\001 \001(\0132\025.xc.protoc.Chat"
+  "Player\022\"\n\004chat\030\002 \001(\0132\024.xc.protoc.XCChatM"
+  "sg\"/\n\016XCSystemMsgBRO\022\014\n\004type\030\001 \001(\021\022\017\n\007co"
+  "ntent\030\002 \003(\t"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_xc_5fprotoc_2eproto = {
+  false, InitDefaults_xc_5fprotoc_2eproto, 
+  descriptor_table_protodef_xc_5fprotoc_2eproto,
+  "xc_protoc.proto", &assign_descriptors_table_xc_5fprotoc_2eproto, 611,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 11);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\017xc_protoc.proto\022\txc.protoc\"\035\n\007XCAlive\022"
-      "\022\n\nclientTime\030\001 \001(\004\" \n\nXCAliveACK\022\022\n\nser"
-      "verTime\030\001 \001(\004\"V\n\007XCLogin\022\013\n\003uid\030\001 \002(\003\022\016\n"
-      "\006roomId\030\002 \002(\003\022\r\n\005token\030\003 \001(\t\022\021\n\treconnec"
-      "t\030\004 \002(\010\022\014\n\004name\030\005 \002(\t\"D\n\nXCLoginACK\022\016\n\006r"
-      "esult\030\001 \002(\021\022\021\n\tisManager\030\002 \001(\010\022\023\n\013online"
-      "Users\030\003 \001(\022\"\n\n\010XCLogout\"\037\n\020XCServerClose"
-      "BRO\022\013\n\003msg\030\001 \001(\t\"7\n\nChatPlayer\022\n\n\002id\030\001 \001"
-      "(\022\022\014\n\004name\030\002 \001(\t\022\017\n\007headImg\030\003 \001(\t\"!\n\020XCO"
-      "nlineCountBRO\022\r\n\005count\030\001 \001(\022\"Q\n\tXCChatMs"
-      "g\022\014\n\004type\030\001 \001(\021\022%\n\006player\030\002 \001(\0132\025.xc.pro"
-      "toc.ChatPlayer\022\017\n\007content\030\003 \001(\t\"Y\n\014XCCha"
-      "tMsgBRO\022%\n\006player\030\001 \001(\0132\025.xc.protoc.Chat"
-      "Player\022\"\n\004chat\030\002 \001(\0132\024.xc.protoc.XCChatM"
-      "sg\"/\n\016XCSystemMsgBRO\022\014\n\004type\030\001 \001(\021\022\017\n\007co"
-      "ntent\030\002 \003(\t"
+void AddDescriptors_xc_5fprotoc_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 611);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "xc_protoc.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_xc_5fprotoc_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_xc_5fprotoc_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_xc_5fprotoc_2eproto = []() { AddDescriptors_xc_5fprotoc_2eproto(); return true; }();
 namespace xc {
 namespace protoc {
 
@@ -447,20 +416,25 @@ namespace protoc {
 
 void XCAlive::InitAsDefaultInstance() {
 }
+class XCAlive::HasBitSetters {
+ public:
+  static void set_has_clienttime(XCAlive* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCAlive::kClientTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCAlive::XCAlive()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCAlive.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCAlive)
 }
 XCAlive::XCAlive(const XCAlive& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   clienttime_ = from.clienttime_;
@@ -468,7 +442,7 @@ XCAlive::XCAlive(const XCAlive& from)
 }
 
 void XCAlive::SharedCtor() {
-  clienttime_ = GOOGLE_ULONGLONG(0);
+  clienttime_ = PROTOBUF_ULONGLONG(0);
 }
 
 XCAlive::~XCAlive() {
@@ -482,13 +456,8 @@ void XCAlive::SharedDtor() {
 void XCAlive::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCAlive::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCAlive& XCAlive::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCAlive.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCAlive_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -499,14 +468,54 @@ void XCAlive::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  clienttime_ = GOOGLE_ULONGLONG(0);
+  clienttime_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCAlive::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCAlive*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 clientTime = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::uint64 value = val;
+        msg->set_clienttime(value);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCAlive::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCAlive)
   for (;;) {
@@ -516,9 +525,8 @@ bool XCAlive::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 clientTime = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_clienttime();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_clienttime(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &clienttime_)));
@@ -547,6 +555,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCAlive::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -568,8 +577,7 @@ void XCAlive::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCAlive::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCAlive)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -597,8 +605,13 @@ size_t XCAlive::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint64 clientTime = 1;
-  if (has_clienttime()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->clienttime());
@@ -613,9 +626,9 @@ void XCAlive::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCAlive)
   GOOGLE_DCHECK_NE(&from, this);
   const XCAlive* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCAlive>(
+      ::google::protobuf::DynamicCastToGenerated<XCAlive>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCAlive)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -660,14 +673,14 @@ void XCAlive::Swap(XCAlive* other) {
 }
 void XCAlive::InternalSwap(XCAlive* other) {
   using std::swap;
-  swap(clienttime_, other->clienttime_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(clienttime_, other->clienttime_);
 }
 
 ::google::protobuf::Metadata XCAlive::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -675,20 +688,25 @@ void XCAlive::InternalSwap(XCAlive* other) {
 
 void XCAliveACK::InitAsDefaultInstance() {
 }
+class XCAliveACK::HasBitSetters {
+ public:
+  static void set_has_servertime(XCAliveACK* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCAliveACK::kServerTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCAliveACK::XCAliveACK()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCAliveACK.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCAliveACK)
 }
 XCAliveACK::XCAliveACK(const XCAliveACK& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   servertime_ = from.servertime_;
@@ -696,7 +714,7 @@ XCAliveACK::XCAliveACK(const XCAliveACK& from)
 }
 
 void XCAliveACK::SharedCtor() {
-  servertime_ = GOOGLE_ULONGLONG(0);
+  servertime_ = PROTOBUF_ULONGLONG(0);
 }
 
 XCAliveACK::~XCAliveACK() {
@@ -710,13 +728,8 @@ void XCAliveACK::SharedDtor() {
 void XCAliveACK::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCAliveACK::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCAliveACK& XCAliveACK::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCAliveACK.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCAliveACK_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -727,14 +740,54 @@ void XCAliveACK::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  servertime_ = GOOGLE_ULONGLONG(0);
+  servertime_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCAliveACK::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCAliveACK*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 serverTime = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::uint64 value = val;
+        msg->set_servertime(value);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCAliveACK::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCAliveACK)
   for (;;) {
@@ -744,9 +797,8 @@ bool XCAliveACK::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 serverTime = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_servertime();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_servertime(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &servertime_)));
@@ -775,6 +827,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCAliveACK::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -796,8 +849,7 @@ void XCAliveACK::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCAliveACK::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCAliveACK)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -825,8 +877,13 @@ size_t XCAliveACK::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint64 serverTime = 1;
-  if (has_servertime()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->servertime());
@@ -841,9 +898,9 @@ void XCAliveACK::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCAliveACK)
   GOOGLE_DCHECK_NE(&from, this);
   const XCAliveACK* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCAliveACK>(
+      ::google::protobuf::DynamicCastToGenerated<XCAliveACK>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCAliveACK)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -888,14 +945,14 @@ void XCAliveACK::Swap(XCAliveACK* other) {
 }
 void XCAliveACK::InternalSwap(XCAliveACK* other) {
   using std::swap;
-  swap(servertime_, other->servertime_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(servertime_, other->servertime_);
 }
 
 ::google::protobuf::Metadata XCAliveACK::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -903,6 +960,25 @@ void XCAliveACK::InternalSwap(XCAliveACK* other) {
 
 void XCLogin::InitAsDefaultInstance() {
 }
+class XCLogin::HasBitSetters {
+ public:
+  static void set_has_uid(XCLogin* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_roomid(XCLogin* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_token(XCLogin* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_reconnect(XCLogin* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_name(XCLogin* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCLogin::kUidFieldNumber;
 const int XCLogin::kRoomIdFieldNumber;
@@ -912,15 +988,13 @@ const int XCLogin::kNameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCLogin::XCLogin()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCLogin.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCLogin)
 }
 XCLogin::XCLogin(const XCLogin& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -938,6 +1012,8 @@ XCLogin::XCLogin(const XCLogin& from)
 }
 
 void XCLogin::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_XCLogin_xc_5fprotoc_2eproto.base);
   token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&uid_, 0, static_cast<size_t>(
@@ -958,13 +1034,8 @@ void XCLogin::SharedDtor() {
 void XCLogin::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCLogin::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCLogin& XCLogin::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCLogin.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCLogin_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -976,7 +1047,7 @@ void XCLogin::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       token_.ClearNonDefaultToEmptyNoArena();
     }
@@ -984,7 +1055,7 @@ void XCLogin::Clear() {
       name_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 28u) {
+  if (cached_has_bits & 0x0000001cu) {
     ::memset(&uid_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&reconnect_) -
         reinterpret_cast<char*>(&uid_)) + sizeof(reconnect_));
@@ -993,9 +1064,110 @@ void XCLogin::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCLogin::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCLogin*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required int64 uid = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int64 value = val;
+        msg->set_uid(value);
+        break;
+      }
+      // required int64 roomId = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int64 value = val;
+        msg->set_roomid(value);
+        break;
+      }
+      // optional string token = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("xc.protoc.XCLogin.token");
+        auto str = msg->mutable_token();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          object = str;
+          str->clear();
+          str->reserve(size);
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto len_delim_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // required bool reconnect = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        bool value = val;
+        msg->set_reconnect(value);
+        break;
+      }
+      // required string name = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("xc.protoc.XCLogin.name");
+        auto str = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          object = str;
+          str->clear();
+          str->reserve(size);
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto len_delim_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCLogin::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCLogin)
   for (;;) {
@@ -1005,9 +1177,8 @@ bool XCLogin::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required int64 uid = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_uid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_uid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &uid_)));
@@ -1019,9 +1190,8 @@ bool XCLogin::MergePartialFromCodedStream(
 
       // required int64 roomId = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_roomid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_roomid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &roomid_)));
@@ -1033,8 +1203,7 @@ bool XCLogin::MergePartialFromCodedStream(
 
       // optional string token = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_token()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1049,9 +1218,8 @@ bool XCLogin::MergePartialFromCodedStream(
 
       // required bool reconnect = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_reconnect();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_reconnect(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &reconnect_)));
@@ -1063,8 +1231,7 @@ bool XCLogin::MergePartialFromCodedStream(
 
       // required string name = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1096,6 +1263,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCLogin::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1147,8 +1315,7 @@ void XCLogin::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCLogin::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCLogin)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1262,8 +1429,13 @@ size_t XCLogin::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string token = 3;
-  if (has_token()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->token());
@@ -1278,9 +1450,9 @@ void XCLogin::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCLogin)
   GOOGLE_DCHECK_NE(&from, this);
   const XCLogin* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCLogin>(
+      ::google::protobuf::DynamicCastToGenerated<XCLogin>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCLogin)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1297,13 +1469,13 @@ void XCLogin::MergeFrom(const XCLogin& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_token();
+      _has_bits_[0] |= 0x00000001u;
       token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.token_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000002u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -1344,6 +1516,8 @@ void XCLogin::Swap(XCLogin* other) {
 }
 void XCLogin::InternalSwap(XCLogin* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   token_.Swap(&other->token_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -1351,13 +1525,11 @@ void XCLogin::InternalSwap(XCLogin* other) {
   swap(uid_, other->uid_);
   swap(roomid_, other->roomid_);
   swap(reconnect_, other->reconnect_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata XCLogin::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1365,6 +1537,19 @@ void XCLogin::InternalSwap(XCLogin* other) {
 
 void XCLoginACK::InitAsDefaultInstance() {
 }
+class XCLoginACK::HasBitSetters {
+ public:
+  static void set_has_result(XCLoginACK* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_ismanager(XCLoginACK* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_onlineusers(XCLoginACK* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCLoginACK::kResultFieldNumber;
 const int XCLoginACK::kIsManagerFieldNumber;
@@ -1372,15 +1557,13 @@ const int XCLoginACK::kOnlineUsersFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCLoginACK::XCLoginACK()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCLoginACK.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCLoginACK)
 }
 XCLoginACK::XCLoginACK(const XCLoginACK& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&result_, &from.result_,
@@ -1406,13 +1589,8 @@ void XCLoginACK::SharedDtor() {
 void XCLoginACK::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCLoginACK::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCLoginACK& XCLoginACK::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCLoginACK.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCLoginACK_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1424,7 +1602,7 @@ void XCLoginACK::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&result_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&onlineusers_) -
         reinterpret_cast<char*>(&result_)) + sizeof(onlineusers_));
@@ -1433,9 +1611,69 @@ void XCLoginACK::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCLoginACK::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCLoginACK*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required sint32 result = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int32 value = ::google::protobuf::internal::WireFormatLite::ZigZagDecode32(val);
+        msg->set_result(value);
+        break;
+      }
+      // optional bool isManager = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        bool value = val;
+        msg->set_ismanager(value);
+        break;
+      }
+      // optional sint64 onlineUsers = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int64 value = ::google::protobuf::internal::WireFormatLite::ZigZagDecode64(val);
+        msg->set_onlineusers(value);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCLoginACK::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCLoginACK)
   for (;;) {
@@ -1445,9 +1683,8 @@ bool XCLoginACK::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required sint32 result = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_result();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_result(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
                  input, &result_)));
@@ -1459,9 +1696,8 @@ bool XCLoginACK::MergePartialFromCodedStream(
 
       // optional bool isManager = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_ismanager();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_ismanager(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &ismanager_)));
@@ -1473,9 +1709,8 @@ bool XCLoginACK::MergePartialFromCodedStream(
 
       // optional sint64 onlineUsers = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_onlineusers();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_onlineusers(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &onlineusers_)));
@@ -1504,6 +1739,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCLoginACK::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1535,8 +1771,7 @@ void XCLoginACK::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCLoginACK::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCLoginACK)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1580,14 +1815,19 @@ size_t XCLoginACK::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::SInt32Size(
         this->result());
   }
-  if (_has_bits_[0 / 32] & 6u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000006u) {
     // optional bool isManager = 2;
-    if (has_ismanager()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 1;
     }
 
     // optional sint64 onlineUsers = 3;
-    if (has_onlineusers()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->onlineusers());
@@ -1603,9 +1843,9 @@ void XCLoginACK::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCLoginACK)
   GOOGLE_DCHECK_NE(&from, this);
   const XCLoginACK* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCLoginACK>(
+      ::google::protobuf::DynamicCastToGenerated<XCLoginACK>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCLoginACK)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1622,7 +1862,7 @@ void XCLoginACK::MergeFrom(const XCLoginACK& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       result_ = from.result_;
     }
@@ -1661,16 +1901,16 @@ void XCLoginACK::Swap(XCLoginACK* other) {
 }
 void XCLoginACK::InternalSwap(XCLoginACK* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(result_, other->result_);
   swap(ismanager_, other->ismanager_);
   swap(onlineusers_, other->onlineusers_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata XCLoginACK::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1678,19 +1918,21 @@ void XCLoginACK::InternalSwap(XCLoginACK* other) {
 
 void XCLogout::InitAsDefaultInstance() {
 }
+class XCLogout::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCLogout::XCLogout()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCLogout.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCLogout)
 }
 XCLogout::XCLogout(const XCLogout& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:xc.protoc.XCLogout)
@@ -1710,13 +1952,8 @@ void XCLogout::SharedDtor() {
 void XCLogout::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCLogout::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCLogout& XCLogout::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCLogout.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCLogout_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1731,9 +1968,38 @@ void XCLogout::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCLogout::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCLogout*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCLogout::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCLogout)
   for (;;) {
@@ -1755,6 +2021,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCLogout::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1770,8 +2037,7 @@ void XCLogout::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCLogout::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCLogout)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1793,6 +2059,10 @@ size_t XCLogout::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1802,9 +2072,9 @@ void XCLogout::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCLogout)
   GOOGLE_DCHECK_NE(&from, this);
   const XCLogout* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCLogout>(
+      ::google::protobuf::DynamicCastToGenerated<XCLogout>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCLogout)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1846,13 +2116,13 @@ void XCLogout::Swap(XCLogout* other) {
 }
 void XCLogout::InternalSwap(XCLogout* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata XCLogout::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1860,20 +2130,25 @@ void XCLogout::InternalSwap(XCLogout* other) {
 
 void XCServerCloseBRO::InitAsDefaultInstance() {
 }
+class XCServerCloseBRO::HasBitSetters {
+ public:
+  static void set_has_msg(XCServerCloseBRO* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCServerCloseBRO::kMsgFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCServerCloseBRO::XCServerCloseBRO()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCServerCloseBRO.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCServerCloseBRO)
 }
 XCServerCloseBRO::XCServerCloseBRO(const XCServerCloseBRO& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1884,6 +2159,8 @@ XCServerCloseBRO::XCServerCloseBRO(const XCServerCloseBRO& from)
 }
 
 void XCServerCloseBRO::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_XCServerCloseBRO_xc_5fprotoc_2eproto.base);
   msg_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1899,13 +2176,8 @@ void XCServerCloseBRO::SharedDtor() {
 void XCServerCloseBRO::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCServerCloseBRO::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCServerCloseBRO& XCServerCloseBRO::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCServerCloseBRO.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCServerCloseBRO_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1924,9 +2196,61 @@ void XCServerCloseBRO::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCServerCloseBRO::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCServerCloseBRO*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string msg = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("xc.protoc.XCServerCloseBRO.msg");
+        auto str = msg->mutable_msg();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          object = str;
+          str->clear();
+          str->reserve(size);
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto len_delim_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCServerCloseBRO::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCServerCloseBRO)
   for (;;) {
@@ -1936,8 +2260,7 @@ bool XCServerCloseBRO::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string msg = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_msg()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1969,6 +2292,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCServerCloseBRO::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1995,8 +2319,7 @@ void XCServerCloseBRO::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCServerCloseBRO::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCServerCloseBRO)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2030,8 +2353,13 @@ size_t XCServerCloseBRO::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string msg = 1;
-  if (has_msg()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->msg());
@@ -2046,9 +2374,9 @@ void XCServerCloseBRO::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCServerCloseBRO)
   GOOGLE_DCHECK_NE(&from, this);
   const XCServerCloseBRO* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCServerCloseBRO>(
+      ::google::protobuf::DynamicCastToGenerated<XCServerCloseBRO>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCServerCloseBRO)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2065,7 +2393,7 @@ void XCServerCloseBRO::MergeFrom(const XCServerCloseBRO& from) {
   (void) cached_has_bits;
 
   if (from.has_msg()) {
-    set_has_msg();
+    _has_bits_[0] |= 0x00000001u;
     msg_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
 }
@@ -2094,15 +2422,15 @@ void XCServerCloseBRO::Swap(XCServerCloseBRO* other) {
 }
 void XCServerCloseBRO::InternalSwap(XCServerCloseBRO* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   msg_.Swap(&other->msg_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata XCServerCloseBRO::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2110,6 +2438,19 @@ void XCServerCloseBRO::InternalSwap(XCServerCloseBRO* other) {
 
 void ChatPlayer::InitAsDefaultInstance() {
 }
+class ChatPlayer::HasBitSetters {
+ public:
+  static void set_has_id(ChatPlayer* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_name(ChatPlayer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_headimg(ChatPlayer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ChatPlayer::kIdFieldNumber;
 const int ChatPlayer::kNameFieldNumber;
@@ -2117,15 +2458,13 @@ const int ChatPlayer::kHeadImgFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ChatPlayer::ChatPlayer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_ChatPlayer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.ChatPlayer)
 }
 ChatPlayer::ChatPlayer(const ChatPlayer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2141,9 +2480,11 @@ ChatPlayer::ChatPlayer(const ChatPlayer& from)
 }
 
 void ChatPlayer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_ChatPlayer_xc_5fprotoc_2eproto.base);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   headimg_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_ = GOOGLE_LONGLONG(0);
+  id_ = PROTOBUF_LONGLONG(0);
 }
 
 ChatPlayer::~ChatPlayer() {
@@ -2159,13 +2500,8 @@ void ChatPlayer::SharedDtor() {
 void ChatPlayer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ChatPlayer::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ChatPlayer& ChatPlayer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_ChatPlayer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ChatPlayer_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2177,7 +2513,7 @@ void ChatPlayer::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2185,14 +2521,95 @@ void ChatPlayer::Clear() {
       headimg_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  id_ = GOOGLE_LONGLONG(0);
+  id_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ChatPlayer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ChatPlayer*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional sint64 id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int64 value = ::google::protobuf::internal::WireFormatLite::ZigZagDecode64(val);
+        msg->set_id(value);
+        break;
+      }
+      // optional string name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("xc.protoc.ChatPlayer.name");
+        auto str = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          object = str;
+          str->clear();
+          str->reserve(size);
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto len_delim_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string headImg = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("xc.protoc.ChatPlayer.headImg");
+        auto str = msg->mutable_headimg();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          object = str;
+          str->clear();
+          str->reserve(size);
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto len_delim_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ChatPlayer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.ChatPlayer)
   for (;;) {
@@ -2202,9 +2619,8 @@ bool ChatPlayer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional sint64 id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &id_)));
@@ -2216,8 +2632,7 @@ bool ChatPlayer::MergePartialFromCodedStream(
 
       // optional string name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2232,8 +2647,7 @@ bool ChatPlayer::MergePartialFromCodedStream(
 
       // optional string headImg = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_headimg()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2265,6 +2679,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ChatPlayer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2306,8 +2721,7 @@ void ChatPlayer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* ChatPlayer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.ChatPlayer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2357,23 +2771,28 @@ size_t ChatPlayer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string name = 2;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->name());
     }
 
     // optional string headImg = 3;
-    if (has_headimg()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->headimg());
     }
 
     // optional sint64 id = 1;
-    if (has_id()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->id());
@@ -2389,9 +2808,9 @@ void ChatPlayer::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.ChatPlayer)
   GOOGLE_DCHECK_NE(&from, this);
   const ChatPlayer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ChatPlayer>(
+      ::google::protobuf::DynamicCastToGenerated<ChatPlayer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.ChatPlayer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2408,13 +2827,13 @@ void ChatPlayer::MergeFrom(const ChatPlayer& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000001u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_headimg();
+      _has_bits_[0] |= 0x00000002u;
       headimg_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.headimg_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2448,18 +2867,18 @@ void ChatPlayer::Swap(ChatPlayer* other) {
 }
 void ChatPlayer::InternalSwap(ChatPlayer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   headimg_.Swap(&other->headimg_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(id_, other->id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ChatPlayer::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2467,20 +2886,25 @@ void ChatPlayer::InternalSwap(ChatPlayer* other) {
 
 void XCOnlineCountBRO::InitAsDefaultInstance() {
 }
+class XCOnlineCountBRO::HasBitSetters {
+ public:
+  static void set_has_count(XCOnlineCountBRO* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCOnlineCountBRO::kCountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCOnlineCountBRO::XCOnlineCountBRO()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCOnlineCountBRO.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCOnlineCountBRO)
 }
 XCOnlineCountBRO::XCOnlineCountBRO(const XCOnlineCountBRO& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   count_ = from.count_;
@@ -2488,7 +2912,7 @@ XCOnlineCountBRO::XCOnlineCountBRO(const XCOnlineCountBRO& from)
 }
 
 void XCOnlineCountBRO::SharedCtor() {
-  count_ = GOOGLE_LONGLONG(0);
+  count_ = PROTOBUF_LONGLONG(0);
 }
 
 XCOnlineCountBRO::~XCOnlineCountBRO() {
@@ -2502,13 +2926,8 @@ void XCOnlineCountBRO::SharedDtor() {
 void XCOnlineCountBRO::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCOnlineCountBRO::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCOnlineCountBRO& XCOnlineCountBRO::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCOnlineCountBRO.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCOnlineCountBRO_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2519,14 +2938,54 @@ void XCOnlineCountBRO::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  count_ = GOOGLE_LONGLONG(0);
+  count_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCOnlineCountBRO::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCOnlineCountBRO*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional sint64 count = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int64 value = ::google::protobuf::internal::WireFormatLite::ZigZagDecode64(val);
+        msg->set_count(value);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCOnlineCountBRO::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCOnlineCountBRO)
   for (;;) {
@@ -2536,9 +2995,8 @@ bool XCOnlineCountBRO::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional sint64 count = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &count_)));
@@ -2567,6 +3025,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCOnlineCountBRO::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2588,8 +3047,7 @@ void XCOnlineCountBRO::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCOnlineCountBRO::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCOnlineCountBRO)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2617,8 +3075,13 @@ size_t XCOnlineCountBRO::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional sint64 count = 1;
-  if (has_count()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::SInt64Size(
         this->count());
@@ -2633,9 +3096,9 @@ void XCOnlineCountBRO::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCOnlineCountBRO)
   GOOGLE_DCHECK_NE(&from, this);
   const XCOnlineCountBRO* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCOnlineCountBRO>(
+      ::google::protobuf::DynamicCastToGenerated<XCOnlineCountBRO>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCOnlineCountBRO)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2680,14 +3143,14 @@ void XCOnlineCountBRO::Swap(XCOnlineCountBRO* other) {
 }
 void XCOnlineCountBRO::InternalSwap(XCOnlineCountBRO* other) {
   using std::swap;
-  swap(count_, other->count_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(count_, other->count_);
 }
 
 ::google::protobuf::Metadata XCOnlineCountBRO::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2697,6 +3160,24 @@ void XCChatMsg::InitAsDefaultInstance() {
   ::xc::protoc::_XCChatMsg_default_instance_._instance.get_mutable()->player_ = const_cast< ::xc::protoc::ChatPlayer*>(
       ::xc::protoc::ChatPlayer::internal_default_instance());
 }
+class XCChatMsg::HasBitSetters {
+ public:
+  static void set_has_type(XCChatMsg* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::xc::protoc::ChatPlayer& player(const XCChatMsg* msg);
+  static void set_has_player(XCChatMsg* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_content(XCChatMsg* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::xc::protoc::ChatPlayer&
+XCChatMsg::HasBitSetters::player(const XCChatMsg* msg) {
+  return *msg->player_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCChatMsg::kTypeFieldNumber;
 const int XCChatMsg::kPlayerFieldNumber;
@@ -2704,15 +3185,13 @@ const int XCChatMsg::kContentFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCChatMsg::XCChatMsg()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCChatMsg.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCChatMsg)
 }
 XCChatMsg::XCChatMsg(const XCChatMsg& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2722,13 +3201,15 @@ XCChatMsg::XCChatMsg(const XCChatMsg& from)
   if (from.has_player()) {
     player_ = new ::xc::protoc::ChatPlayer(*from.player_);
   } else {
-    player_ = NULL;
+    player_ = nullptr;
   }
   type_ = from.type_;
   // @@protoc_insertion_point(copy_constructor:xc.protoc.XCChatMsg)
 }
 
 void XCChatMsg::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_XCChatMsg_xc_5fprotoc_2eproto.base);
   content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&player_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&type_) -
@@ -2748,13 +3229,8 @@ void XCChatMsg::SharedDtor() {
 void XCChatMsg::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCChatMsg::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCChatMsg& XCChatMsg::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCChatMsg.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCChatMsg_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2766,12 +3242,12 @@ void XCChatMsg::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       content_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(player_ != NULL);
+      GOOGLE_DCHECK(player_ != nullptr);
       player_->Clear();
     }
   }
@@ -2780,9 +3256,86 @@ void XCChatMsg::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCChatMsg::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCChatMsg*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional sint32 type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int32 value = ::google::protobuf::internal::WireFormatLite::ZigZagDecode32(val);
+        msg->set_type(value);
+        break;
+      }
+      // optional .xc.protoc.ChatPlayer player = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::xc::protoc::ChatPlayer::_InternalParse;
+        object = msg->mutable_player();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        bool ok = ctx->ParseExactRange({parser_till_end, object},
+                                       ptr, newend);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ok);
+        ptr = newend;
+        break;
+      }
+      // optional string content = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("xc.protoc.XCChatMsg.content");
+        auto str = msg->mutable_content();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          object = str;
+          str->clear();
+          str->reserve(size);
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto len_delim_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCChatMsg::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCChatMsg)
   for (;;) {
@@ -2792,9 +3345,8 @@ bool XCChatMsg::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional sint32 type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
                  input, &type_)));
@@ -2806,8 +3358,7 @@ bool XCChatMsg::MergePartialFromCodedStream(
 
       // optional .xc.protoc.ChatPlayer player = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_player()));
         } else {
@@ -2818,8 +3369,7 @@ bool XCChatMsg::MergePartialFromCodedStream(
 
       // optional string content = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_content()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2851,6 +3401,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCChatMsg::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2867,7 +3418,7 @@ void XCChatMsg::SerializeWithCachedSizes(
   // optional .xc.protoc.ChatPlayer player = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_player(), output);
+      2, HasBitSetters::player(this), output);
   }
 
   // optional string content = 3;
@@ -2888,8 +3439,7 @@ void XCChatMsg::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCChatMsg::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCChatMsg)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2904,7 +3454,7 @@ void XCChatMsg::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_player(), deterministic, target);
+        2, HasBitSetters::player(this), target);
   }
 
   // optional string content = 3;
@@ -2935,23 +3485,28 @@ size_t XCChatMsg::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string content = 3;
-    if (has_content()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->content());
     }
 
     // optional .xc.protoc.ChatPlayer player = 2;
-    if (has_player()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *player_);
     }
 
     // optional sint32 type = 1;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt32Size(
           this->type());
@@ -2967,9 +3522,9 @@ void XCChatMsg::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCChatMsg)
   GOOGLE_DCHECK_NE(&from, this);
   const XCChatMsg* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCChatMsg>(
+      ::google::protobuf::DynamicCastToGenerated<XCChatMsg>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCChatMsg)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2986,9 +3541,9 @@ void XCChatMsg::MergeFrom(const XCChatMsg& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_content();
+      _has_bits_[0] |= 0x00000001u;
       content_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.content_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -3025,17 +3580,17 @@ void XCChatMsg::Swap(XCChatMsg* other) {
 }
 void XCChatMsg::InternalSwap(XCChatMsg* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   content_.Swap(&other->content_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(player_, other->player_);
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata XCChatMsg::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3047,37 +3602,57 @@ void XCChatMsgBRO::InitAsDefaultInstance() {
   ::xc::protoc::_XCChatMsgBRO_default_instance_._instance.get_mutable()->chat_ = const_cast< ::xc::protoc::XCChatMsg*>(
       ::xc::protoc::XCChatMsg::internal_default_instance());
 }
+class XCChatMsgBRO::HasBitSetters {
+ public:
+  static const ::xc::protoc::ChatPlayer& player(const XCChatMsgBRO* msg);
+  static void set_has_player(XCChatMsgBRO* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::xc::protoc::XCChatMsg& chat(const XCChatMsgBRO* msg);
+  static void set_has_chat(XCChatMsgBRO* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::xc::protoc::ChatPlayer&
+XCChatMsgBRO::HasBitSetters::player(const XCChatMsgBRO* msg) {
+  return *msg->player_;
+}
+const ::xc::protoc::XCChatMsg&
+XCChatMsgBRO::HasBitSetters::chat(const XCChatMsgBRO* msg) {
+  return *msg->chat_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCChatMsgBRO::kPlayerFieldNumber;
 const int XCChatMsgBRO::kChatFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCChatMsgBRO::XCChatMsgBRO()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCChatMsgBRO.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCChatMsgBRO)
 }
 XCChatMsgBRO::XCChatMsgBRO(const XCChatMsgBRO& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_player()) {
     player_ = new ::xc::protoc::ChatPlayer(*from.player_);
   } else {
-    player_ = NULL;
+    player_ = nullptr;
   }
   if (from.has_chat()) {
     chat_ = new ::xc::protoc::XCChatMsg(*from.chat_);
   } else {
-    chat_ = NULL;
+    chat_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:xc.protoc.XCChatMsgBRO)
 }
 
 void XCChatMsgBRO::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_XCChatMsgBRO_xc_5fprotoc_2eproto.base);
   ::memset(&player_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&chat_) -
       reinterpret_cast<char*>(&player_)) + sizeof(chat_));
@@ -3096,13 +3671,8 @@ void XCChatMsgBRO::SharedDtor() {
 void XCChatMsgBRO::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCChatMsgBRO::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCChatMsgBRO& XCChatMsgBRO::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCChatMsgBRO.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCChatMsgBRO_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3114,13 +3684,13 @@ void XCChatMsgBRO::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(player_ != NULL);
+      GOOGLE_DCHECK(player_ != nullptr);
       player_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(chat_ != NULL);
+      GOOGLE_DCHECK(chat_ != nullptr);
       chat_->Clear();
     }
   }
@@ -3128,9 +3698,72 @@ void XCChatMsgBRO::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCChatMsgBRO::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCChatMsgBRO*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .xc.protoc.ChatPlayer player = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::xc::protoc::ChatPlayer::_InternalParse;
+        object = msg->mutable_player();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        bool ok = ctx->ParseExactRange({parser_till_end, object},
+                                       ptr, newend);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ok);
+        ptr = newend;
+        break;
+      }
+      // optional .xc.protoc.XCChatMsg chat = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::Parse32(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::xc::protoc::XCChatMsg::_InternalParse;
+        object = msg->mutable_chat();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        bool ok = ctx->ParseExactRange({parser_till_end, object},
+                                       ptr, newend);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ok);
+        ptr = newend;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCChatMsgBRO::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCChatMsgBRO)
   for (;;) {
@@ -3140,8 +3773,7 @@ bool XCChatMsgBRO::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .xc.protoc.ChatPlayer player = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_player()));
         } else {
@@ -3152,8 +3784,7 @@ bool XCChatMsgBRO::MergePartialFromCodedStream(
 
       // optional .xc.protoc.XCChatMsg chat = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_chat()));
         } else {
@@ -3181,6 +3812,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCChatMsgBRO::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3192,13 +3824,13 @@ void XCChatMsgBRO::SerializeWithCachedSizes(
   // optional .xc.protoc.ChatPlayer player = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_player(), output);
+      1, HasBitSetters::player(this), output);
   }
 
   // optional .xc.protoc.XCChatMsg chat = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_chat(), output);
+      2, HasBitSetters::chat(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3209,8 +3841,7 @@ void XCChatMsgBRO::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCChatMsgBRO::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCChatMsgBRO)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3220,14 +3851,14 @@ void XCChatMsgBRO::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_player(), deterministic, target);
+        1, HasBitSetters::player(this), target);
   }
 
   // optional .xc.protoc.XCChatMsg chat = 2;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_chat(), deterministic, target);
+        2, HasBitSetters::chat(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3247,16 +3878,21 @@ size_t XCChatMsgBRO::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .xc.protoc.ChatPlayer player = 1;
-    if (has_player()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *player_);
     }
 
     // optional .xc.protoc.XCChatMsg chat = 2;
-    if (has_chat()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *chat_);
@@ -3272,9 +3908,9 @@ void XCChatMsgBRO::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCChatMsgBRO)
   GOOGLE_DCHECK_NE(&from, this);
   const XCChatMsgBRO* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCChatMsgBRO>(
+      ::google::protobuf::DynamicCastToGenerated<XCChatMsgBRO>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCChatMsgBRO)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3291,7 +3927,7 @@ void XCChatMsgBRO::MergeFrom(const XCChatMsgBRO& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_player()->::xc::protoc::ChatPlayer::MergeFrom(from.player());
     }
@@ -3325,15 +3961,15 @@ void XCChatMsgBRO::Swap(XCChatMsgBRO* other) {
 }
 void XCChatMsgBRO::InternalSwap(XCChatMsgBRO* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(player_, other->player_);
   swap(chat_, other->chat_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata XCChatMsgBRO::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3341,21 +3977,26 @@ void XCChatMsgBRO::InternalSwap(XCChatMsgBRO* other) {
 
 void XCSystemMsgBRO::InitAsDefaultInstance() {
 }
+class XCSystemMsgBRO::HasBitSetters {
+ public:
+  static void set_has_type(XCSystemMsgBRO* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XCSystemMsgBRO::kTypeFieldNumber;
 const int XCSystemMsgBRO::kContentFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XCSystemMsgBRO::XCSystemMsgBRO()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_xc_5fprotoc_2eproto::scc_info_XCSystemMsgBRO.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:xc.protoc.XCSystemMsgBRO)
 }
 XCSystemMsgBRO::XCSystemMsgBRO(const XCSystemMsgBRO& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       content_(from.content_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3364,6 +4005,8 @@ XCSystemMsgBRO::XCSystemMsgBRO(const XCSystemMsgBRO& from)
 }
 
 void XCSystemMsgBRO::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_XCSystemMsgBRO_xc_5fprotoc_2eproto.base);
   type_ = 0;
 }
 
@@ -3378,13 +4021,8 @@ void XCSystemMsgBRO::SharedDtor() {
 void XCSystemMsgBRO::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* XCSystemMsgBRO::descriptor() {
-  ::protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const XCSystemMsgBRO& XCSystemMsgBRO::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_xc_5fprotoc_2eproto::scc_info_XCSystemMsgBRO.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_XCSystemMsgBRO_xc_5fprotoc_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3401,9 +4039,74 @@ void XCSystemMsgBRO::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* XCSystemMsgBRO::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<XCSystemMsgBRO*>(object);
+  ::google::protobuf::uint32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional sint32 type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val;
+        ptr = ::google::protobuf::io::Parse64(ptr, &val);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ::google::protobuf::int32 value = ::google::protobuf::internal::WireFormatLite::ZigZagDecode32(val);
+        msg->set_type(value);
+        break;
+      }
+      // repeated string content = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::Parse32(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("xc.protoc.XCSystemMsgBRO.content");
+          auto str = msg->add_content();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            object = str;
+            str->clear();
+            str->reserve(size);
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto len_delim_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(str, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool XCSystemMsgBRO::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:xc.protoc.XCSystemMsgBRO)
   for (;;) {
@@ -3413,9 +4116,8 @@ bool XCSystemMsgBRO::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional sint32 type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
                  input, &type_)));
@@ -3427,8 +4129,7 @@ bool XCSystemMsgBRO::MergePartialFromCodedStream(
 
       // repeated string content = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_content()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3461,6 +4162,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void XCSystemMsgBRO::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3492,8 +4194,7 @@ void XCSystemMsgBRO::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* XCSystemMsgBRO::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:xc.protoc.XCSystemMsgBRO)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3531,6 +4232,10 @@ size_t XCSystemMsgBRO::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated string content = 2;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->content_size());
@@ -3540,7 +4245,8 @@ size_t XCSystemMsgBRO::ByteSizeLong() const {
   }
 
   // optional sint32 type = 1;
-  if (has_type()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::SInt32Size(
         this->type());
@@ -3555,9 +4261,9 @@ void XCSystemMsgBRO::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:xc.protoc.XCSystemMsgBRO)
   GOOGLE_DCHECK_NE(&from, this);
   const XCSystemMsgBRO* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XCSystemMsgBRO>(
+      ::google::protobuf::DynamicCastToGenerated<XCSystemMsgBRO>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:xc.protoc.XCSystemMsgBRO)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3603,15 +4309,15 @@ void XCSystemMsgBRO::Swap(XCSystemMsgBRO* other) {
 }
 void XCSystemMsgBRO::InternalSwap(XCSystemMsgBRO* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   content_.InternalSwap(CastToBase(&other->content_));
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata XCSystemMsgBRO::GetMetadata() const {
-  protobuf_xc_5fprotoc_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_xc_5fprotoc_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_xc_5fprotoc_2eproto);
+  return ::file_level_metadata_xc_5fprotoc_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3620,40 +4326,41 @@ void XCSystemMsgBRO::InternalSwap(XCSystemMsgBRO* other) {
 }  // namespace xc
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCAlive* Arena::CreateMaybeMessage< ::xc::protoc::XCAlive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCAlive* Arena::CreateMaybeMessage< ::xc::protoc::XCAlive >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCAlive >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCAliveACK* Arena::CreateMaybeMessage< ::xc::protoc::XCAliveACK >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCAliveACK* Arena::CreateMaybeMessage< ::xc::protoc::XCAliveACK >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCAliveACK >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCLogin* Arena::CreateMaybeMessage< ::xc::protoc::XCLogin >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCLogin* Arena::CreateMaybeMessage< ::xc::protoc::XCLogin >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCLogin >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCLoginACK* Arena::CreateMaybeMessage< ::xc::protoc::XCLoginACK >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCLoginACK* Arena::CreateMaybeMessage< ::xc::protoc::XCLoginACK >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCLoginACK >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCLogout* Arena::CreateMaybeMessage< ::xc::protoc::XCLogout >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCLogout* Arena::CreateMaybeMessage< ::xc::protoc::XCLogout >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCLogout >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCServerCloseBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCServerCloseBRO >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCServerCloseBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCServerCloseBRO >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCServerCloseBRO >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::ChatPlayer* Arena::CreateMaybeMessage< ::xc::protoc::ChatPlayer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::ChatPlayer* Arena::CreateMaybeMessage< ::xc::protoc::ChatPlayer >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::ChatPlayer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCOnlineCountBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCOnlineCountBRO >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCOnlineCountBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCOnlineCountBRO >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCOnlineCountBRO >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCChatMsg* Arena::CreateMaybeMessage< ::xc::protoc::XCChatMsg >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCChatMsg* Arena::CreateMaybeMessage< ::xc::protoc::XCChatMsg >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCChatMsg >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCChatMsgBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCChatMsgBRO >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCChatMsgBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCChatMsgBRO >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCChatMsgBRO >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::xc::protoc::XCSystemMsgBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCSystemMsgBRO >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::xc::protoc::XCSystemMsgBRO* Arena::CreateMaybeMessage< ::xc::protoc::XCSystemMsgBRO >(Arena* arena) {
   return Arena::CreateInternal< ::xc::protoc::XCSystemMsgBRO >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>
