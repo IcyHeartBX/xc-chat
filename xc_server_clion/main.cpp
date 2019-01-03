@@ -4,6 +4,7 @@
 using namespace std;
 
 pthread_t t1;
+bool debug_xc=0;
 
 /**
  * 显示服务器菜单
@@ -32,21 +33,24 @@ int main() {
     start_server();
     int option = 0;
     for(;;){
-        showMenu();
-        cin>>option;
-        switch (option) {
-            case 1:
-                XCManager::GetInstance()->BroadcastServerClose();
-                break;
-            case 2:
-                XCManager::GetInstance()->BroadcastOnlieUserCount();
-                break;
-            case 3:
-                XCManager::GetInstance()->BroadcastSystemMessage();
-                break;
-            case 0:
-                goto END;
+        if(debug_xc) {
+            showMenu();
+            cin>>option;
+            switch (option) {
+                case 1:
+                    XCManager::GetInstance()->BroadcastServerClose();
+                    break;
+                case 2:
+                    XCManager::GetInstance()->BroadcastOnlieUserCount();
+                    break;
+                case 3:
+                    XCManager::GetInstance()->BroadcastSystemMessage();
+                    break;
+                case 0:
+                    goto END;
+            }
         }
+
     }
     END:
     XCManager::GetInstance()->CloseServer();
