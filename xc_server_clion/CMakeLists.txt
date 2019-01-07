@@ -13,7 +13,7 @@ add_executable(xc_server_clion
         manager/XCManager.h
         utils/NetUtils.h
         utils/PackConsts.h
-        utils/PackUtils.h)
+        utils/PackUtils.h consts/RedisConsts.h services/IOnlineUserService.h define/BeanDefine.h)
 #include_directories(/usr/local/hiredis/)
 include_directories(/usr/local/protobuf/include)
 #link_directories(/usr/local/hiredis/)

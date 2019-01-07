@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/consts/RedisConsts.h">
+			<Option target="xc_server_clion"/>
+		</Unit>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/define/BeanDefine.h">
+			<Option target="xc_server_clion"/>
+		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/main.cpp">
 			<Option target="xc_server_clion"/>
 		</Unit>
@@ -95,6 +101,9 @@
 			<Option target="xc_server_clion"/>
 		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h">
+			<Option target="xc_server_clion"/>
+		</Unit>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.c">
