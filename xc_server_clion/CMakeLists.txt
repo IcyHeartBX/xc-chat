@@ -14,12 +14,12 @@ add_executable(xc_server_clion
         utils/NetUtils.h
         utils/PackConsts.h
         utils/PackUtils.h consts/RedisConsts.h services/IOnlineUserService.h define/BeanDefine.h)
-#include_directories(/usr/local/hiredis/)
+include_directories(/usr/local/hiredis/)
 include_directories(/usr/local/protobuf/include)
-#link_directories(/usr/local/hiredis/)
+link_directories(/usr/local/hiredis/)
 link_directories(/usr/local/protobuf/lib/)
 
-#target_link_libraries(xc_server_clion /usr/local/hiredis/libhiredis.a)
+target_link_libraries(xc_server_clion /usr/local/hiredis/libhiredis.a)
 target_link_libraries(xc_server_clion /usr/local/protobuf/lib/libprotobuf.a)
 
 find_package(Threads)
