@@ -4,16 +4,24 @@
 CMakeFiles/xc_server_clion.dir/tcp/tcp_poll_server.c.o: ../tcp/tcp_poll_server.c
 CMakeFiles/xc_server_clion.dir/tcp/tcp_poll_server.c.o: ../tcp/tcp_poll_server.h
 
+CMakeFiles/xc_server_clion.dir/main.cpp.o: ../define/BeanDefine.h
 CMakeFiles/xc_server_clion.dir/main.cpp.o: ../main.cpp
 CMakeFiles/xc_server_clion.dir/main.cpp.o: ../manager/XCManager.h
+CMakeFiles/xc_server_clion.dir/main.cpp.o: ../services/IOnlineUserService.h
 
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../define/BeanDefine.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../manager/XCManager.cpp
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../manager/XCManager.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../protoc/xc_protoc.pb.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../services/IOnlineUserService.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../services/impl/OnlineUserService.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../tcp/tcp_poll_server.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../utils/NetUtils.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../utils/PackConsts.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../utils/PackUtils.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: /usr/local/hiredis/hiredis.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: /usr/local/hiredis/read.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: /usr/local/hiredis/sds.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: /usr/local/protobuf/include/google/protobuf/arena.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: /usr/local/protobuf/include/google/protobuf/arena_impl.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: /usr/local/protobuf/include/google/protobuf/arenastring.h
@@ -93,4 +101,13 @@ CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o: /usr/local/protobuf/inc
 CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o: /usr/local/protobuf/include/google/protobuf/wire_format.h
 CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o: /usr/local/protobuf/include/google/protobuf/wire_format_lite.h
 CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o: /usr/local/protobuf/include/google/protobuf/wire_format_lite_inl.h
+
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../consts/RedisConsts.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../define/BeanDefine.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../services/IOnlineUserService.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../services/impl/OnlineUserService.cpp
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../services/impl/OnlineUserService.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/hiredis.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/read.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/sds.h
 

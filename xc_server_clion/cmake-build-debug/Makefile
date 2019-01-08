@@ -204,6 +204,33 @@ protoc/xc_protoc.pb.cc.s:
 	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.s
 .PHONY : protoc/xc_protoc.pb.cc.s
 
+services/impl/OnlineUserService.o: services/impl/OnlineUserService.cpp.o
+
+.PHONY : services/impl/OnlineUserService.o
+
+# target to build an object file
+services/impl/OnlineUserService.cpp.o:
+	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o
+.PHONY : services/impl/OnlineUserService.cpp.o
+
+services/impl/OnlineUserService.i: services/impl/OnlineUserService.cpp.i
+
+.PHONY : services/impl/OnlineUserService.i
+
+# target to preprocess a source file
+services/impl/OnlineUserService.cpp.i:
+	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.i
+.PHONY : services/impl/OnlineUserService.cpp.i
+
+services/impl/OnlineUserService.s: services/impl/OnlineUserService.cpp.s
+
+.PHONY : services/impl/OnlineUserService.s
+
+# target to generate assembly for a file
+services/impl/OnlineUserService.cpp.s:
+	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.s
+.PHONY : services/impl/OnlineUserService.cpp.s
+
 tcp/tcp_poll_server.o: tcp/tcp_poll_server.c.o
 
 .PHONY : tcp/tcp_poll_server.o
@@ -249,6 +276,9 @@ help:
 	@echo "... protoc/xc_protoc.pb.o"
 	@echo "... protoc/xc_protoc.pb.i"
 	@echo "... protoc/xc_protoc.pb.s"
+	@echo "... services/impl/OnlineUserService.o"
+	@echo "... services/impl/OnlineUserService.i"
+	@echo "... services/impl/OnlineUserService.s"
 	@echo "... tcp/tcp_poll_server.o"
 	@echo "... tcp/tcp_poll_server.i"
 	@echo "... tcp/tcp_poll_server.s"

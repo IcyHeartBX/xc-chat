@@ -19,7 +19,7 @@ public:
      @param o 要增加的用户的对象引用
      @return 正确返回0
      */
-    virtual int AddOnlineUser(XC_User & o) = 0;
+    virtual int AddOnlineUser(XCUser & o) = 0;
 
 
     /**
@@ -29,7 +29,7 @@ public:
      @param uid 用户id
      @return 正确返回0
      */
-    virtual int GetOnlineUserById(XC_User * pUser,long long uid) = 0;
+    virtual int GetOnlineUserById(XCUser * pUser,long long uid) = 0;
 
     /**
      取得所有在线用户
@@ -37,7 +37,7 @@ public:
      @param users 在线用户集合
      @return 正确返回0
      */
-    virtual int GetAllOnlineUsers(vector<XC_User*> * users /* in */) = 0;
+    virtual int GetAllOnlineUsers(vector<XCUser*> * users /* in */) = 0;
 };
 
 #endif //XC_SERVER_CLION_IONLINEUSERSERVICE_H

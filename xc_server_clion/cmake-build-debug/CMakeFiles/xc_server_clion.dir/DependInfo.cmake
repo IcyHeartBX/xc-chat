@@ -11,17 +11,20 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/local/hiredis"
   "/usr/local/protobuf/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/main.cpp" "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/CMakeFiles/xc_server_clion.dir/main.cpp.o"
   "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.cpp" "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o"
   "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.cc" "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o"
+  "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp" "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/hiredis"
   "/usr/local/protobuf/include"
   )
 

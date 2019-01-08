@@ -8,6 +8,7 @@
 #include "../utils/PackConsts.h"
 #include "../utils/PackUtils.h"
 #include "../tcp/tcp_poll_server.h"
+#include "../services/impl/OnlineUserService.h"
 
 using namespace std;
 using namespace xc::protoc;
@@ -54,6 +55,18 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                 if(flag) {
                     //cout<<"FUNC ServerRecvCallback(),uid:"<<login.uid()<<",roomid:"<<login.roomid()<<",token:"<<login.token()<<endl;
                     printf("FUNC ServerRecvCallback(),isConnect:%d\n",login.reconnect());
+                    if(NULL != onlineUserService) {     // 加到Redis中
+                        XCUser user ;
+                        user.fd = fd;
+                        user.uid = login.uid();
+                        user.roomId = login.roomid();
+                        user.name = login.name();
+                        user.token = login.token();
+                        int ret = onlineUserService->AddOnlineUser(user);
+                        if(ret == 0) {
+                            cout<<"增加新用户成功!"<<endl;
+                        }
+                    }
                     SendLoginACK(fd,login.uid());
                 }
             }
@@ -81,6 +94,7 @@ void recvServerDataCallback(int fd,unsigned char * buf,int buflen) {
 }
 
 void XCManager::StartServer() {
+    onlineUserService = new OnlineUserService;
     tcp_poll_server_init(&serverHandler, PORT);
     tcp_poll_server_set_recv_callback(serverHandler, recvServerDataCallback);
     tcp_poll_server_start(serverHandler);
@@ -89,6 +103,10 @@ void XCManager::StartServer() {
 void XCManager::CloseServer() {
     tcp_poll_server_close(serverHandler);
     tcp_poll_server_destroy(&serverHandler);
+    if(NULL != onlineUserService) {
+        delete onlineUserService;
+        onlineUserService = NULL;
+    }
 }
 
 // 发送心跳回包 0x00

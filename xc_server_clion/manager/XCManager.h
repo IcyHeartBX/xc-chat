@@ -6,6 +6,7 @@
 #define XC_SERVER_CLION_XCMANAGER_H
 #include <iostream>
 #include <pthread.h>
+#include "../services/IOnlineUserService.h"
 
 class XCManager {
 private:
@@ -31,6 +32,8 @@ private:
     static pthread_mutex_t mutex;
     // tcp服务器句柄
     void * serverHandler;
+    // 在线用户服务
+    IOnlineUserService * onlineUserService;
 
 };
 #endif //XC_SERVER_CLION_XCMANAGER_H
