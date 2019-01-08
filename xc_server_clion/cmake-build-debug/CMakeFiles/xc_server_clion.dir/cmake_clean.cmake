@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/xc_server_clion.dir/protoc/xc_protoc.pb.cc.o"
   "CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o"
   "CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o"
+  "CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o"
   "xc_server_clion.pdb"
   "xc_server_clion"
 )

@@ -16,7 +16,7 @@ add_executable(xc_server_clion
         utils/PackUtils.h
         consts/RedisConsts.h
         services/IOnlineUserService.h
-        define/BeanDefine.h services/impl/OnlineUserService.cpp services/impl/OnlineUserService.h)
+        define/BeanDefine.h services/impl/OnlineUserService.cpp services/impl/OnlineUserService.h services/IRoomService.h services/impl/XCRoomService.cpp services/impl/XCRoomService.h)
 include_directories(/usr/local/hiredis/)
 include_directories(/usr/local/protobuf/include)
 link_directories(/usr/local/hiredis/)

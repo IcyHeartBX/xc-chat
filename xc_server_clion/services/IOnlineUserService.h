@@ -24,7 +24,6 @@ public:
 
     /**
      根据uid取得用户对象
-
      @param pUser 用户对象指针
      @param uid 用户id
      @return 正确返回0

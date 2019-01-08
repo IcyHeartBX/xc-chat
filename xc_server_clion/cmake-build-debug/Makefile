@@ -231,6 +231,33 @@ services/impl/OnlineUserService.cpp.s:
 	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.s
 .PHONY : services/impl/OnlineUserService.cpp.s
 
+services/impl/XCRoomService.o: services/impl/XCRoomService.cpp.o
+
+.PHONY : services/impl/XCRoomService.o
+
+# target to build an object file
+services/impl/XCRoomService.cpp.o:
+	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o
+.PHONY : services/impl/XCRoomService.cpp.o
+
+services/impl/XCRoomService.i: services/impl/XCRoomService.cpp.i
+
+.PHONY : services/impl/XCRoomService.i
+
+# target to preprocess a source file
+services/impl/XCRoomService.cpp.i:
+	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.i
+.PHONY : services/impl/XCRoomService.cpp.i
+
+services/impl/XCRoomService.s: services/impl/XCRoomService.cpp.s
+
+.PHONY : services/impl/XCRoomService.s
+
+# target to generate assembly for a file
+services/impl/XCRoomService.cpp.s:
+	$(MAKE) -f CMakeFiles/xc_server_clion.dir/build.make CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.s
+.PHONY : services/impl/XCRoomService.cpp.s
+
 tcp/tcp_poll_server.o: tcp/tcp_poll_server.c.o
 
 .PHONY : tcp/tcp_poll_server.o
@@ -279,6 +306,9 @@ help:
 	@echo "... services/impl/OnlineUserService.o"
 	@echo "... services/impl/OnlineUserService.i"
 	@echo "... services/impl/OnlineUserService.s"
+	@echo "... services/impl/XCRoomService.o"
+	@echo "... services/impl/XCRoomService.i"
+	@echo "... services/impl/XCRoomService.s"
 	@echo "... tcp/tcp_poll_server.o"
 	@echo "... tcp/tcp_poll_server.i"
 	@echo "... tcp/tcp_poll_server.s"

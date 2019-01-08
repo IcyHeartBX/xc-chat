@@ -108,10 +108,19 @@
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h">
+			<Option target="xc_server_clion"/>
+		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp">
 			<Option target="xc_server_clion"/>
 		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.h">
+			<Option target="xc_server_clion"/>
+		</Unit>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp">
+			<Option target="xc_server_clion"/>
+		</Unit>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.c">
