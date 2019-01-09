@@ -18,6 +18,8 @@ vector
 ../define/BeanDefine.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/define/BeanDefine.h
 
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
+
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp
 sstream
 -
@@ -31,6 +33,18 @@ hiredis.h
 -
 ../IOnlineUserService.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h
+
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp
+XCRoomService.h
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h
+../../consts/RedisConsts.h
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/consts/RedisConsts.h
+
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h
+hiredis.h
+-
+../IRoomService.h
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
 
 /usr/local/hiredis/hiredis.h
 read.h

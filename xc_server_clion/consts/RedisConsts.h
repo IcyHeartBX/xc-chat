@@ -19,7 +19,7 @@
 // 用户信息name key
 #define RD_USER_NAME_KEY        "name"
 // 用户信息fd key
-#define RD_USER_FD_KEY          "fd"
+#define RD_USER_FD_KEY          "fdex"
 // 用户信息 roomId KEY
 #define RD_USER_ROOMID_KEY      "roomId"
 // 用户信息 token KEY
