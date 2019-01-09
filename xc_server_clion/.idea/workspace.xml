@@ -11,31 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a453993-d23a-436f-82f8-78e1040fd82b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/XCManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/XCManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/IXCRoomView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/IXCRoomView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/RoomServerListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/RoomServerListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/XCRoomActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/XCRoomActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/XCRoomPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/app/src/main/java/com/pix/xcandroid/room/XCRoomPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XCAndroid/modules/XCServerLibrary/src/main/java/com/pix/xcserverlibrary/XCServerManager.java" afterDir="false" />
+    <list default="true" id="8a453993-d23a-436f-82f8-78e1040fd82b" name="Default Changelist" comment="增加房间管理代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/xc_server_clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/xc_server_clion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consts/RedisConsts.h" beforeDir="false" afterPath="$PROJECT_DIR$/consts/RedisConsts.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/define/BeanDefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/define/BeanDefine.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/XCManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/manager/XCManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/XCManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/manager/XCManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protoc/xc_protoc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/protoc/xc_protoc.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/IRoomService.h" beforeDir="false" afterPath="$PROJECT_DIR$/services/IRoomService.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/impl/XCRoomService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/services/impl/XCRoomService.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/impl/XCRoomService.h" beforeDir="false" afterPath="$PROJECT_DIR$/services/impl/XCRoomService.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/PackConsts.h" beforeDir="false" afterPath="$PROJECT_DIR$/utils/PackConsts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/impl/OnlineUserService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/services/impl/OnlineUserService.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,14 +96,14 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="6" />
-          <entry key="ObjectiveC" value="6852" />
+          <entry key="ObjectiveC" value="7081" />
           <entry key="PLAIN_TEXT" value="189" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="55" />
+          <entry key="ObjectiveC" value="59" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -126,11 +111,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/impl/OnlineUserService.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="298">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="e#42#60#0" expanded="true" />
               </folding>
@@ -139,10 +124,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/impl/OnlineUserService.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+              <folding>
+                <element signature="e#130#150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manager/XCManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="59" column="67" lean-forward="true" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
+            <state relative-caret-position="150">
+              <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
               <folding>
                 <element signature="e#44#66#0" expanded="true" />
               </folding>
@@ -151,82 +148,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/IRoomService.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-              <folding>
-                <element signature="e#162#181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protoc/xc_protoc.pb.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="1652" selection-start-line="1652" selection-end-line="1652" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/PackConsts.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consts/RedisConsts.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/PackUtils.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager/XCManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-              <folding>
-                <element signature="e#116#135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protoc/xc_protoc.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services/impl/XCRoomService.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-              <folding>
-                <element signature="e#42#59#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="298">
+              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -246,8 +171,8 @@
       <find>ltos</find>
       <find>GetAllOnlineUsers</find>
       <find>OnlineUserService::RemoveOnlineUserByFD(),</find>
-      <find>GetOnlineUserById</find>
       <find>SendLoginACK</find>
+      <find>GetOnlineUserById</find>
     </findStrings>
     <replaceStrings>
       <replace>XC</replace>
@@ -269,16 +194,16 @@
         <option value="$PROJECT_DIR$/services/impl/OnlineUserService.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/utils/TypeUtils.h" />
-        <option value="$PROJECT_DIR$/services/impl/OnlineUserService.cpp" />
         <option value="$PROJECT_DIR$/define/BeanDefine.h" />
         <option value="$PROJECT_DIR$/services/IRoomService.h" />
         <option value="$PROJECT_DIR$/services/impl/XCRoomService.h" />
-        <option value="$PROJECT_DIR$/consts/RedisConsts.h" />
         <option value="$PROJECT_DIR$/protoc/xc_protoc.proto" />
         <option value="$PROJECT_DIR$/manager/XCManager.h" />
         <option value="$PROJECT_DIR$/utils/PackConsts.h" />
-        <option value="$PROJECT_DIR$/manager/XCManager.cpp" />
         <option value="$PROJECT_DIR$/services/impl/XCRoomService.cpp" />
+        <option value="$PROJECT_DIR$/manager/XCManager.cpp" />
+        <option value="$PROJECT_DIR$/consts/RedisConsts.h" />
+        <option value="$PROJECT_DIR$/services/impl/OnlineUserService.cpp" />
       </list>
     </option>
   </component>
@@ -404,7 +329,7 @@
       <workItem from="1546481833609" duration="2514000" />
       <workItem from="1546831173053" duration="8034000" />
       <workItem from="1546914776242" duration="12652000" />
-      <workItem from="1546999205176" duration="11997000" />
+      <workItem from="1546999205176" duration="14755000" />
     </task>
     <task id="LOCAL-00001" summary="调试聊天消息广播">
       <created>1545983681398</created>
@@ -466,7 +391,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54891000" />
+    <option name="totallyTimeSpent" value="57649000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,19 +406,19 @@
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1898223" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1898223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17824773" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27039275" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4003021" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32930514" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.2779456" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32930514" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.1450151" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32930514" />
@@ -629,16 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/impl/OnlineUserService.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="e#130#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/define/BeanDefine.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -690,16 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/impl/OnlineUserService.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protoc/xc_protoc.pb.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -711,13 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consts/RedisConsts.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -738,12 +636,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/XCManager.cpp">
+    <entry file="file://$PROJECT_DIR$/services/impl/XCRoomService.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="59" column="67" lean-forward="true" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
+        <state relative-caret-position="886">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
           <folding>
-            <element signature="e#44#66#0" expanded="true" />
+            <element signature="e#42#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -758,12 +656,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/impl/XCRoomService.cpp">
+    <entry file="file://$PROJECT_DIR$/services/impl/OnlineUserService.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+        <state relative-caret-position="335">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#42#59#0" expanded="true" />
+            <element signature="e#130#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consts/RedisConsts.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/XCManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding>
+            <element signature="e#44#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/impl/OnlineUserService.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
           </folding>
         </state>
       </provider>

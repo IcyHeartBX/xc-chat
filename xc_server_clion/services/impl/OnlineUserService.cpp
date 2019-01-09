@@ -77,12 +77,13 @@ int OnlineUserService::RemoveOnlineUserByFD(int fd) {
                 return -1;
             }
             freeReplyObject(delReply);
+
             // 移除用户map
             redisReply * delUserReply = (redisReply*)redisCommand(rdConnect,RD_REMOVE_ONLINE_USER_MAP,user->uid);
             if(NULL == delUserReply || delUserReply->integer < 0) {
                 return -2;
             }
-            freeReplyObject(delReply);
+            freeReplyObject(delUserReply);
         }
         // 销毁User
         if(usersVector[i] != NULL) {
@@ -107,15 +108,16 @@ int OnlineUserService::GetOnlineUserById(XCUser * pUser,long long uid) {
     // 此用户在线
     redisReply * reply = (redisReply *)redisCommand(rdConnect,RD_GET_ONLINE_USER,uid);
     if(NULL != reply ) {  // 有数据
-        if(reply->integer < 0) {
+        if(reply->str == NULL) {    // 没用户
             freeReplyObject(reply);
             return -3;
         }
         freeReplyObject(reply);
+
         // 取得昵称
         redisReply * nameReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_NAME_KEY);
         if(NULL != nameReply ) {
-            if(nameReply->integer >=0) {
+            if(NULL != nameReply->str){
                 pUser->name = nameReply->str;
             }
             freeReplyObject(nameReply);
@@ -128,10 +130,11 @@ int OnlineUserService::GetOnlineUserById(XCUser * pUser,long long uid) {
             }
             freeReplyObject(fdReply);
         }
+
         // 取得token
         redisReply * tokenReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_TOKEN_KEY);
         if(NULL != tokenReply) {
-            if(tokenReply->integer >= 0) {
+            if(NULL != tokenReply->str) {
                 pUser->token = tokenReply->str;
             }
             freeReplyObject(tokenReply);
@@ -149,6 +152,7 @@ int OnlineUserService::GetOnlineUserById(XCUser * pUser,long long uid) {
     else {
         ret = -3;
     }
+
 
     return ret;
 }

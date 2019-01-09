@@ -199,7 +199,6 @@ void XCManager::BroadcastChatMessage(void * content) {
     if(NULL == content) {
         return ;
     }
-    cout<<"============"<<endl;
     XCChatMsg * chatMsg = static_cast<XCChatMsg*>(content);
     XCChatMsgBRO chatMsgBRO;
     ChatPlayer * player = chatMsgBRO.mutable_player();
