@@ -26,7 +26,7 @@ message XCLogin
 // 登陆返回
 message XCLoginACK
 {
-	required sint32 result = 1;  //0成功 1校验失败
+	required sint32 result = 1;  //0成功 1校验失败//2房间不存在
 	optional bool isManager = 2; //是否是管理员
 	optional sint64 onlineUsers= 3; // 在线用户数
 }

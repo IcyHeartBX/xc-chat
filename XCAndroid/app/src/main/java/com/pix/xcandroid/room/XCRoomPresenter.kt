@@ -38,6 +38,12 @@ class XCRoomPresenter : RoomServerListener{
         roomView?.showServerState(info)
     }
 
+    /**
+     * 房间不存在
+     */
+    override fun onRoomNoExist() {
+        roomView?.showRoomNoExist()
+    }
     override fun onChatMsgBRO(sender: ChatUserInfo, msg: String) {
         roomView?.showChatMsg(sender,msg)
     }

@@ -23,6 +23,11 @@ public interface XCServerListener {
     public void onLoginFailure(String errMsg);
 
     /**
+     * 登录房间不存在
+     */
+    public void onLoginRoomNoExist();
+
+    /**
      * 服务器主动断开连接
      * @param msg 断开消息
      */

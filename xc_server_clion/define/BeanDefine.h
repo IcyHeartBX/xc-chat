@@ -15,4 +15,7 @@ typedef struct _XC_User {
     string name;
 } XCUser;
 
+typedef struct _XC_Room {
+    int roomId;
+} XCRoom;
 #endif //XC_SERVER_CLION_BEANDEFINE_H

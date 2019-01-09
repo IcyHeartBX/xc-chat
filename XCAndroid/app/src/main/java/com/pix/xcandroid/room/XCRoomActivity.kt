@@ -1,8 +1,10 @@
 package com.pix.xcandroid.room
 
+import android.content.DialogInterface
 import android.graphics.Rect
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.view.View
 import com.pix.xcandroid.R
 import com.pix.xcandroid.bean.ChatUserInfo
@@ -16,11 +18,13 @@ class XCRoomActivity : AppCompatActivity(),IXCRoomView, View.OnClickListener,Roo
     val TAG:String = "XCRoomActivity"
 
     var presenter:XCRoomPresenter = XCRoomPresenter()
-    var userName :String="未命名"
-    companion object {
 
+    var userName :String="未命名"
+
+    companion object {
         const val EXT_USER_NAME = "nickname"
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_xcroom)
@@ -33,17 +37,32 @@ class XCRoomActivity : AppCompatActivity(),IXCRoomView, View.OnClickListener,Roo
         room_input_view.setOnSendMsgListener(this)
         presenter.connectServer()
     }
-
     override fun showChatMsg(sender: ChatUserInfo, content: String) {
         layout_message_panel.showChatMsg(sender,content,1)
     }
-
     override fun sendMsg(msg: String?) {
         presenter.sendMsg(msg!!)
     }
 
     override fun showServerState(state: String) {
         layout_message_panel.showSystemMsg(state)
+    }
+
+    // 显示dialog
+    override fun showAlertDialog(msg: String) {
+
+    }
+
+    override fun showRoomNoExist() {
+       AlertDialog.Builder(this)
+               .setMessage("房间不存在!")
+               .setPositiveButton("确定", object:DialogInterface.OnClickListener{
+                     override fun onClick(dialog: DialogInterface, which: Int) {
+                         finish()
+                    }
+               })
+               .create()
+               .show()
     }
 
     override fun onClick(v: View?) {

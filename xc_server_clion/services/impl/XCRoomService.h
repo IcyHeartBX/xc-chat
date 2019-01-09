@@ -19,6 +19,8 @@ public:
     }
 public:
     virtual int CreateRoom(int64_t roomId);
+    virtual int GetRoomById(XCRoom * room/* in */,int64_t roomId);
+    virtual int IsRoomOnline(int64_t roomId);
 private:
     // redis连接对象
     redisContext * rdConnect;

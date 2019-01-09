@@ -56,4 +56,39 @@ int XCRoomService::CreateRoom(int64_t  roomId) {
     }
     return 0;
 }
+// 根据id找房间
+int XCRoomService::GetRoomById(XCRoom * room/* in */,int64_t roomId) {
+    int ret = 0;
+    if(NULL == room) {
+        ret = -1;
+        return ret;
+    }
+    if(roomId <= 0) {
+        ret = -2;
+        return ret;
+    }
+    // 房间不在线
+    if(0 != IsRoomOnline(roomId)) {
+        ret = -3;
+        return ret;
+    }
 
+}
+// 查找房间是否在线
+int XCRoomService::IsRoomOnline(int64_t roomId) {
+    int ret = 0;
+    if(roomId <= 0) {
+        ret = -1;
+        return ret;
+    }
+    if(NULL == rdConnect) {
+        ret = -2;
+        return ret;
+    }
+    redisReply * reply = (redisReply * ) redisCommand(rdConnect,RD_GET_ONLINE_ROOM,roomId);
+    if(NULL == reply || reply->str == NULL) {
+        ret = -3;
+        return ret;
+    }
+    return ret;
+};

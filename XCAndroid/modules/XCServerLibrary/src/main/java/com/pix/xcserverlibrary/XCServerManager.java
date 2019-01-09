@@ -383,6 +383,9 @@ public class XCServerManager implements TcpSocketListener, XCServerConstants, XC
             if (null != xcServerListener) {
                 xcServerListener.onLoginFailure("登录错误,state:" + loginACK.result);
             }
+            if(loginACK.result == xc_server_login_room_no_exist) {
+                xcServerListener.onLoginRoomNoExist();
+            }
         }
     }
 

@@ -56,6 +56,11 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                 if(flag) {
                     //cout<<"FUNC ServerRecvCallback(),uid:"<<login.uid()<<",roomid:"<<login.roomid()<<",token:"<<login.token()<<endl;
                     printf("FUNC ServerRecvCallback(),isConnect:%d\n",login.reconnect());
+                    // 检查房间是否存在
+                    if(NULL == roomService || 0 != roomService->IsRoomOnline(login.roomid())) {
+                        SendLoginACK(fd,login.uid(),LOGIN_ROOM_RESULT::RoomNoExist);
+                        return ;
+                    }
                     if(NULL != onlineUserService) {     // 加到Redis中
                         XCUser user ;
                         user.fd = fd;
@@ -68,7 +73,7 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                             cout<<"增加新用户成功!"<<endl;
                         }
                     }
-                    SendLoginACK(fd,login.uid());
+                    SendLoginACK(fd,login.uid(),LOGIN_ROOM_RESULT::LoginSuccess);
                 }
             }
                 break;
@@ -112,7 +117,6 @@ void XCManager::StartServer() {
     tcp_poll_server_init(&serverHandler, PORT);
     tcp_poll_server_set_recv_callback(serverHandler, recvServerDataCallback);
     tcp_poll_server_start(serverHandler);
-
 }
 
 void XCManager::CloseServer() {
@@ -143,9 +147,9 @@ void XCManager::SendAliveACK(int fd) {
 }
 
 // 发送登录回包 0x01
-void XCManager::SendLoginACK(int fd,long long uid) {
+void XCManager::SendLoginACK(int fd,long long uid,int result) {
     XCLoginACK loginACK;
-    loginACK.set_result(0);
+    loginACK.set_result(result);
     if(88888 == uid) {
         loginACK.set_ismanager(true);
     }
@@ -215,9 +219,7 @@ void XCManager::BroadcastChatMessage(void * content) {
     int datalen;
     Pack(data, &datalen ,length ,ROOM_SERVER_ACK::CHAT_MESSAGE_ACK,buf);
     tcp_poll_server_broadcast_data(serverHandler,data,datalen);
-
 }
-
 
 // 广播消息
 void XCManager::BroadcastSystemMessage() {

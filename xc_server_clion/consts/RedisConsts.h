@@ -51,6 +51,7 @@
 #define RD_ONLINE_ROOM_MAP_HEAD "xc_online_room_hash:"
 // 增加在线房间信息map
 #define RD_ADD_ONLINE_ROOM_MAP      "HSET xc_online_room_hash:%lld roomId %lld"
-
+// 根据房间id查找房间在线情况
+#define RD_GET_ONLINE_ROOM      "HGET xc_online_room_hash %lld"
 
 #endif /* RedisConsts_h */

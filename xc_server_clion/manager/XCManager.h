@@ -20,7 +20,7 @@ public:
     void StartServer();
     void CloseServer();
     void SendAliveACK(int fd);
-    void SendLoginACK(int fd,long long uid);
+    void SendLoginACK(int fd,long long uid,int result);
     void BroadcastServerClose();
     void BroadcastOnlieUserCount();
     void BroadcastSystemMessage();

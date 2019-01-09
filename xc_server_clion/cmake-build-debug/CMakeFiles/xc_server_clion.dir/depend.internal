@@ -117,6 +117,7 @@ CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o
  /usr/local/hiredis/sds.h
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/consts/RedisConsts.h
+ /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/define/BeanDefine.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h

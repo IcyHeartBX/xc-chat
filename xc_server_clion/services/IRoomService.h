@@ -7,6 +7,7 @@
 #define XC_SERVER_CLION_IROOMSERVICE_H
 using namespace std;
 #include <iostream>
+#include "../define/BeanDefine.h"
 class IRoomService {
 public:
      /**
@@ -16,5 +17,14 @@ public:
       *         <0 创建失败
       */
      virtual int CreateRoom(int64_t roomId )=0;
+
+     /**
+      * 根据房间id取得房间对象
+      */
+     virtual int GetRoomById(XCRoom * room/* in */,int64_t roomId) = 0;
+     /**
+      * 根据id查找房间是否在线
+      */
+     virtual int IsRoomOnline(int64_t roomId) = 0;
 };
 #endif //XC_SERVER_CLION_IROOMSERVICE_H

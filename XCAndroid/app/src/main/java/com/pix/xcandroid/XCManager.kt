@@ -10,13 +10,13 @@ class XCManager private constructor() : XCServerListener {
     private val serverService: IXCServerService?
 
     private var uid: Long = 0
+
     private var uname: String? = null
     private var rid: Long = 0
     private var token: String? = null
     private var roomServerListener: RoomServerListener? = null
     val ip: String?
         get() = serverService?.ip
-
     val port: Int
         get() = serverService?.port ?: -1
 
@@ -74,6 +74,10 @@ class XCManager private constructor() : XCServerListener {
 
     override fun onLoginSuccess(isManager: Boolean, onlineUsers: Long) {
         roomServerListener?.onServerStateInfo("聊天服务器登录成功！")
+    }
+
+    override fun onLoginRoomNoExist() {
+        roomServerListener?.onRoomNoExist();
     }
 
     override fun onLoginFailure(errMsg: String) {

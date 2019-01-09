@@ -9,6 +9,11 @@ interface RoomServerListener {
     fun onServerStateInfo(info:String)
 
     /**
+     * 房间不存在返回
+     */
+    fun onRoomNoExist();
+
+    /**
      * 聊天广播
      */
     fun onChatMsgBRO(sender:ChatUserInfo,msg:String)
