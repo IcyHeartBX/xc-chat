@@ -8,13 +8,16 @@ CMakeFiles/xc_server_clion.dir/main.cpp.o: ../define/BeanDefine.h
 CMakeFiles/xc_server_clion.dir/main.cpp.o: ../main.cpp
 CMakeFiles/xc_server_clion.dir/main.cpp.o: ../manager/XCManager.h
 CMakeFiles/xc_server_clion.dir/main.cpp.o: ../services/IOnlineUserService.h
+CMakeFiles/xc_server_clion.dir/main.cpp.o: ../services/IRoomService.h
 
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../define/BeanDefine.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../manager/XCManager.cpp
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../manager/XCManager.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../protoc/xc_protoc.pb.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../services/IOnlineUserService.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../services/IRoomService.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../services/impl/OnlineUserService.h
+CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../services/impl/XCRoomService.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../tcp/tcp_poll_server.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../utils/NetUtils.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o: ../utils/PackConsts.h
@@ -107,6 +110,7 @@ CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../define/
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../services/IOnlineUserService.h
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../services/impl/OnlineUserService.cpp
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../services/impl/OnlineUserService.h
+CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: ../utils/TypeUtils.h
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/hiredis.h
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/read.h
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/sds.h
@@ -115,6 +119,7 @@ CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../consts/Redi
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../services/IRoomService.h
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../services/impl/XCRoomService.cpp
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../services/impl/XCRoomService.h
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../utils/TypeUtils.h
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: /usr/local/hiredis/hiredis.h
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: /usr/local/hiredis/read.h
 CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: /usr/local/hiredis/sds.h

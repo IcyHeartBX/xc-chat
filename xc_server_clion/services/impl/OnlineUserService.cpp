@@ -5,18 +5,8 @@
 #include <sstream>
 #include "OnlineUserService.h"
 #include "../../consts/RedisConsts.h"
+#include "../../utils/TypeUtils.h"
 
-
-string ltos(long l)
-{
-    ostringstream os;
-    os<<l;
-    string result;
-    istringstream is(os.str());
-    is>>result;
-    return result;
-
-}
 
 OnlineUserService::OnlineUserService(void):isConnect(false) {
     // 超时时间
@@ -46,7 +36,7 @@ int OnlineUserService::AddOnlineUser(XCUser & o) {
     }
     // 插入在线用户
     string cmd = RD_ONLINE_USER_MAP_NAME_HEAD;
-    cmd.append(ltos(o.uid));
+    cmd.append(TypeUtils::ltos(o.uid));
     redisReply * reply =(redisReply*) redisCommand(rdConnect,RD_PUSH_ONLINE_USER,o.uid,cmd.data());
     if(NULL == reply || 0 > reply->integer) {
         ret = -2;

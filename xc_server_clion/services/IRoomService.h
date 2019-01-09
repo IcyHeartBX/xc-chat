@@ -5,6 +5,8 @@
 
 #ifndef XC_SERVER_CLION_IROOMSERVICE_H
 #define XC_SERVER_CLION_IROOMSERVICE_H
+using namespace std;
+#include <iostream>
 class IRoomService {
 public:
      /**
@@ -13,6 +15,6 @@ public:
       * @return 0 创建成功
       *         <0 创建失败
       */
-     virtual int CreateRoom(int roomId )=0;
+     virtual int CreateRoom(int64_t roomId )=0;
 };
 #endif //XC_SERVER_CLION_IROOMSERVICE_H

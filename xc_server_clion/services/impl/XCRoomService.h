@@ -9,7 +9,7 @@
 #include <hiredis.h>
 #include "../IRoomService.h"
 
-class XCRoomService: IRoomService {
+class XCRoomService: public IRoomService {
 public:
     XCRoomService(void);
     ~XCRoomService() {
@@ -18,7 +18,7 @@ public:
         }
     }
 public:
-    virtual int CreateRoom(int roomId);
+    virtual int CreateRoom(int64_t roomId);
 private:
     // redis连接对象
     redisContext * rdConnect;

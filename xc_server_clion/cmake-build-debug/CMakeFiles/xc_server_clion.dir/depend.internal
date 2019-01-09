@@ -9,13 +9,16 @@ CMakeFiles/xc_server_clion.dir/main.cpp.o
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/main.cpp
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h
+ /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
 CMakeFiles/xc_server_clion.dir/manager/XCManager.cpp.o
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/define/BeanDefine.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.cpp
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h
+ /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.h
+ /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/NetUtils.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackConsts.h
@@ -108,6 +111,7 @@ CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.h
+ /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h
  /usr/local/hiredis/hiredis.h
  /usr/local/hiredis/read.h
  /usr/local/hiredis/sds.h
@@ -116,6 +120,7 @@ CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp
  /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h
+ /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h
  /usr/local/hiredis/hiredis.h
  /usr/local/hiredis/read.h
  /usr/local/hiredis/sds.h

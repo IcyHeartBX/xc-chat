@@ -138,6 +138,9 @@
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackUtils.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
+		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h">
+			<Option target="xc_server_clion"/>
+		</Unit>
 		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

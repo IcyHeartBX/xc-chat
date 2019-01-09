@@ -19,6 +19,8 @@ vector
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/define/BeanDefine.h
 
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
+iostream
+-
 
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp
 sstream
@@ -27,6 +29,8 @@ OnlineUserService.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.h
 ../../consts/RedisConsts.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/consts/RedisConsts.h
+../../utils/TypeUtils.h
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h
 
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.h
 hiredis.h
@@ -35,16 +39,26 @@ hiredis.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h
 
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp
+string
+-
 XCRoomService.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h
 ../../consts/RedisConsts.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/consts/RedisConsts.h
+../../utils/TypeUtils.h
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h
 
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h
 hiredis.h
 -
 ../IRoomService.h
 /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h
+
+/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h
+string
+-
+sstream
+-
 
 /usr/local/hiredis/hiredis.h
 read.h

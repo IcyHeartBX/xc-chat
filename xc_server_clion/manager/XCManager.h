@@ -7,6 +7,7 @@
 #include <iostream>
 #include <pthread.h>
 #include "../services/IOnlineUserService.h"
+#include "../services/IRoomService.h"
 
 class XCManager {
 private:
@@ -34,6 +35,8 @@ private:
     void * serverHandler;
     // 在线用户服务
     IOnlineUserService * onlineUserService;
+    // 房间管理服务
+    IRoomService * roomService;
 
 };
 #endif //XC_SERVER_CLION_XCMANAGER_H

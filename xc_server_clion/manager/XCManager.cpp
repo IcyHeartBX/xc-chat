@@ -9,6 +9,7 @@
 #include "../utils/PackUtils.h"
 #include "../tcp/tcp_poll_server.h"
 #include "../services/impl/OnlineUserService.h"
+#include "../services/impl/XCRoomService.h"
 
 using namespace std;
 using namespace xc::protoc;
@@ -105,9 +106,13 @@ void recvServerDataCallback(int fd,unsigned char * buf,int buflen) {
 
 void XCManager::StartServer() {
     onlineUserService = new OnlineUserService;
+    roomService = new XCRoomService;
+    // 临时创建一个房间
+    roomService->CreateRoom(10000);
     tcp_poll_server_init(&serverHandler, PORT);
     tcp_poll_server_set_recv_callback(serverHandler, recvServerDataCallback);
     tcp_poll_server_start(serverHandler);
+
 }
 
 void XCManager::CloseServer() {
@@ -116,6 +121,10 @@ void XCManager::CloseServer() {
     if(NULL != onlineUserService) {
         delete onlineUserService;
         onlineUserService = NULL;
+    }
+    if(NULL != roomService) {
+        delete roomService;
+        roomService = NULL;
     }
 }
 
