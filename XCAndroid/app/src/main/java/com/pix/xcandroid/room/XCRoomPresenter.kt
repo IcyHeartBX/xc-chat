@@ -24,7 +24,7 @@ class XCRoomPresenter : RoomServerListener{
      * 连接服务器
      */
     fun connectServer() {
-        xcManager.connect(7777, userName,8888,"token")
+        xcManager.connect(7777, userName,10000,"token")
     }
 
     /**
