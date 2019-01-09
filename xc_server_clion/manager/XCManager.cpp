@@ -72,7 +72,17 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
             }
                 break;
             case ROOM_SERVER::LOGOUT:           // 登出
-
+                // 用户登出，从在线表移除
+            {
+                XCLogout logout;
+                bool flag = logout.ParseFromArray(data + 4,dlen);
+                if(flag) {
+                    cout<<"FUNC ServerRecvCallback(),ROOM_SERVER::LOGOUT,fd:"<<fd<<endl;
+                    if(NULL != onlineUserService) {
+                        onlineUserService->RemoveOnlineUserByFD(fd);
+                    }
+                }
+            }
                 break;
             case ROOM_SERVER::CHAT_MESSAGE:     // 公屏聊天
                 XCChatMsg chatMsg;

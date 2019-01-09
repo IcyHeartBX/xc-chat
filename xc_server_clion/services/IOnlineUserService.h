@@ -21,6 +21,10 @@ public:
      */
     virtual int AddOnlineUser(XCUser & o) = 0;
 
+    /**
+     * 移除一个用户，根据fd
+     */
+    virtual int RemoveOnlineUserByFD(int fd) = 0;
 
     /**
      根据uid取得用户对象

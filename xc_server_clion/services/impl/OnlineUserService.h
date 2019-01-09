@@ -20,7 +20,10 @@ public:
 public:
     // 增加在线用户
     virtual int AddOnlineUser(XCUser & o);
-    //
+
+    // 移除一个用户，根据fd
+    virtual int RemoveOnlineUserByFD(int fd);
+    // 取得用户，根据id
     virtual int GetOnlineUserById(XCUser * pUser,long long uid);
     // 取得所有在线用户
     virtual int GetAllOnlineUsers(vector<XCUser*> * users /* in */);

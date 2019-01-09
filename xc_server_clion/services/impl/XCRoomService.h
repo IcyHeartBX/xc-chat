@@ -18,7 +18,7 @@ public:
         }
     }
 public:
-    virtual int CreateRoom(int * roomId /* out */);
+    virtual int CreateRoom(int roomId);
 private:
     // redis连接对象
     redisContext * rdConnect;

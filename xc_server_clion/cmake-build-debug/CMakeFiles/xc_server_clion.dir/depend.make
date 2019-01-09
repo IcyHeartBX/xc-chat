@@ -111,3 +111,11 @@ CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/read.h
 CMakeFiles/xc_server_clion.dir/services/impl/OnlineUserService.cpp.o: /usr/local/hiredis/sds.h
 
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../consts/RedisConsts.h
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../services/IRoomService.h
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../services/impl/XCRoomService.cpp
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: ../services/impl/XCRoomService.h
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: /usr/local/hiredis/hiredis.h
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: /usr/local/hiredis/read.h
+CMakeFiles/xc_server_clion.dir/services/impl/XCRoomService.cpp.o: /usr/local/hiredis/sds.h
+
