@@ -21,6 +21,12 @@ public:
     virtual int CreateRoom(int64_t roomId);
     virtual int GetRoomById(XCRoom * room/* in */,int64_t roomId);
     virtual int IsRoomOnline(int64_t roomId);
+    virtual int GetRoomAllUsers(vector<XCUser*> * users,int64_t roomId);
+    virtual int RemoveRoomAllUsers(int64_t roomId);
+    virtual int AddOnlineUser(XCUser & user);
+    virtual int RemoveOnlineUser(XCUser & user);
+private:
+    int GetUserInfo(XCUser * pUser,int64_t uid);
 private:
     // redis连接对象
     redisContext * rdConnect;

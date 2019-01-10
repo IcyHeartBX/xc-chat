@@ -61,16 +61,23 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                         SendLoginACK(fd,login.uid(),LOGIN_ROOM_RESULT::RoomNoExist);
                         return ;
                     }
+                    XCUser user ;
+                    user.fd = fd;
+                    user.uid = login.uid();
+                    user.roomId = login.roomid();
+                    user.name = login.name();
+                    user.token = login.token();
                     if(NULL != onlineUserService) {     // 加到Redis中
-                        XCUser user ;
-                        user.fd = fd;
-                        user.uid = login.uid();
-                        user.roomId = login.roomid();
-                        user.name = login.name();
-                        user.token = login.token();
                         int ret = onlineUserService->AddOnlineUser(user);
                         if(ret == 0) {
                             cout<<"增加新用户成功!"<<endl;
+                        }
+                    }
+                    if(NULL != roomService) {
+                        // 向房间增加用户
+                        int roomRet = roomService->AddOnlineUser(user);
+                        if(roomRet == 0) {
+                            cout<<"向房间增加用户成功!"<<endl;
                         }
                     }
                     SendLoginACK(fd,login.uid(),LOGIN_ROOM_RESULT::LoginSuccess);
@@ -85,6 +92,11 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                 if(flag) {
                     cout<<"FUNC ServerRecvCallback(),ROOM_SERVER::LOGOUT,fd:"<<fd<<endl;
                     if(NULL != onlineUserService) {
+                        XCUser user;
+                        onlineUserService->GetOnlineUserByFd(&user,fd);
+                        if(user.uid > 0 && NULL != roomService) {
+                            roomService->RemoveOnlineUser(user);
+                        }
                         onlineUserService->RemoveOnlineUserByFD(fd);
                     }
                 }
@@ -94,7 +106,26 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                 XCChatMsg chatMsg;
                 bool flag = chatMsg.ParseFromArray(data + 4,dlen);
                 if(flag) {
-                    BroadcastChatMessage(&chatMsg);
+                    // 发送者信息
+                    XCUser user;
+                    if(NULL != onlineUserService) {
+                        onlineUserService->GetOnlineUserById(&user,chatMsg.player().id());
+                        // 根据user找到房间,由房间找到房间内所有用户
+                        vector<XCUser*> users;
+                        if(NULL != roomService && user.roomId > 0) {
+                            roomService->GetRoomAllUsers(&users,user.roomId);
+                        }
+                        vector<int> fds;
+                        // 取出fd
+                        for(int i = 0;users.size();i++) {
+                           if(NULL != users[i]) {
+                               fds.push_back(users[i]->fd);
+                               delete users[i];
+                               users[i] = NULL;
+                           }
+                        }
+                        BroadcastChatMessage(&chatMsg,fds);
+                    }
                 }
                 break;
 
@@ -195,7 +226,7 @@ void XCManager::BroadcastOnlieUserCount() {
 }
 
 
-void XCManager::BroadcastChatMessage(void * content) {
+void XCManager::BroadcastChatMessage(void * content,vector<int> fds) {
     if(NULL == content) {
         return ;
     }

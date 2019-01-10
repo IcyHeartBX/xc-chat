@@ -26,5 +26,24 @@ public:
       * 根据id查找房间是否在线
       */
      virtual int IsRoomOnline(int64_t roomId) = 0;
+     /**
+      * 取得房间内所有用户
+      * @param  users
+      * @param roomId
+      * @return
+      */
+     virtual int GetRoomAllUsers(vector<XCUser*> * users,int64_t roomId) = 0;
+     /**
+      * 移除房间内用户表
+      */
+     virtual int RemoveRoomAllUsers(int64_t roomId) = 0;
+     /**
+      * 房间内增加用户列表
+      */
+     virtual int AddOnlineUser(XCUser & user) = 0;
+     /**
+      * 移除房间内在线用户
+      */
+     virtual int RemoveOnlineUser(XCUser & user) = 0;
 };
 #endif //XC_SERVER_CLION_IROOMSERVICE_H

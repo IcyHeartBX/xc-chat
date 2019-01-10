@@ -24,7 +24,7 @@ public:
     void BroadcastServerClose();
     void BroadcastOnlieUserCount();
     void BroadcastSystemMessage();
-    void BroadcastChatMessage(void * content);
+    void BroadcastChatMessage(void * content,vector<int> fds);
 public:
     void OnRecvServerData(int,unsigned char * ,int);
 

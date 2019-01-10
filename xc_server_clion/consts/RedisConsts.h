@@ -53,5 +53,11 @@
 #define RD_ADD_ONLINE_ROOM_MAP      "HSET xc_online_room_hash:%lld roomId %lld"
 // 根据房间id查找房间在线情况
 #define RD_GET_ONLINE_ROOM      "HGET xc_online_room_hash %lld"
+// 房间内用户表
+#define RD_ADD_ROOM_USER           "HSET xc_room_users_hash:%lld %lld %s"
+// 移除房间在线用户
+#define RD_REMOVE_ROOM_USER         "HDEL xc_room_users_hash:%lld %lld"
+// 取得指定房间内所有用户表
+#define RD_GET_ROOM_USERS_TABLE       "HKEYS xc_room_users_hash:%lld"
 
 #endif /* RedisConsts_h */

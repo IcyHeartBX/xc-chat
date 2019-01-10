@@ -24,12 +24,17 @@ public:
     // 移除一个用户，根据fd
     virtual int RemoveOnlineUserByFD(int fd);
     // 取得用户，根据id
-    virtual int GetOnlineUserById(XCUser * pUser,long long uid);
+    virtual int GetOnlineUserById(XCUser * pUser,int64_t uid);
+    // 取得用户，根据fd
+    virtual  int GetOnlineUserByFd(XCUser * pUser,int fd);
     // 取得所有在线用户
     virtual int GetAllOnlineUsers(vector<XCUser*> * users /* in */);
+private:
+    int GetUserInfo(XCUser * pUser,int64_t uid);
 private:
     // redis连接对象
     redisContext * rdConnect;
     bool isConnect;
+
 };
 #endif //XC_SERVER_CLION_ONLINEUSERSERVICE_H

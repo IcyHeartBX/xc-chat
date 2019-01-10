@@ -32,8 +32,11 @@ public:
      @param uid 用户id
      @return 正确返回0
      */
-    virtual int GetOnlineUserById(XCUser * pUser,long long uid) = 0;
-
+    virtual int GetOnlineUserById(XCUser * pUser,int64_t uid) = 0;
+    /**
+     * 根据fd查找在线用户
+     */
+    virtual  int GetOnlineUserByFd(XCUser * pUser,int fd) = 0;
     /**
      取得所有在线用户
 

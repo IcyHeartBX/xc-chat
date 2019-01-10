@@ -93,7 +93,7 @@ int OnlineUserService::RemoveOnlineUserByFD(int fd) {
     }
     return 0;
 }
-
+// 根据用户id取得用户信息
 int OnlineUserService::GetOnlineUserById(XCUser * pUser,long long uid) {
     cout<<"OnlineUserService::GetOnlineUserById(),RUN..."<<endl;
     int ret = 0;
@@ -113,50 +113,83 @@ int OnlineUserService::GetOnlineUserById(XCUser * pUser,long long uid) {
             return -3;
         }
         freeReplyObject(reply);
-
-        // 取得昵称
-        redisReply * nameReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_NAME_KEY);
-        if(NULL != nameReply ) {
-            if(NULL != nameReply->str){
-                pUser->name = nameReply->str;
-            }
-            freeReplyObject(nameReply);
-        }
-        // 取得fd
-        redisReply * fdReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_FD_KEY);
-        if(NULL != fdReply) {
-            if(fdReply->integer >= 0) {
-                pUser->fd = atoi(fdReply->str);
-            }
-            freeReplyObject(fdReply);
-        }
-
-        // 取得token
-        redisReply * tokenReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_TOKEN_KEY);
-        if(NULL != tokenReply) {
-            if(NULL != tokenReply->str) {
-                pUser->token = tokenReply->str;
-            }
-            freeReplyObject(tokenReply);
-        }
-        // 取得roomId
-        redisReply * roomIdReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_ROOMID_KEY);
-        if(NULL != roomIdReply )  {
-            if(roomIdReply->integer >= 0) {
-                pUser->roomId = atol(roomIdReply->str);
-            }
-            freeReplyObject(roomIdReply);
-        }
-        pUser->uid = uid;
+        GetUserInfo(pUser,uid);
     }
     else {
         ret = -3;
     }
-
-
     return ret;
 }
+// 取得用户信息
+int OnlineUserService::GetUserInfo(XCUser * pUser,int64_t uid) {
+    int ret;
+    if(NULL == pUser || uid <= 0) {
+        ret = -1;
+        return ret;
+    }
+    // 取得昵称
+    redisReply * nameReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_NAME_KEY);
+    if(NULL != nameReply ) {
+        if(NULL != nameReply->str){
+            pUser->name = nameReply->str;
+        }
+        freeReplyObject(nameReply);
+    }
+    // 取得fd
+    redisReply * fdReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_FD_KEY);
+    if(NULL != fdReply) {
+        if(fdReply->integer >= 0) {
+            pUser->fd = atoi(fdReply->str);
+        }
+        freeReplyObject(fdReply);
+    }
 
+    // 取得token
+    redisReply * tokenReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_TOKEN_KEY);
+    if(NULL != tokenReply) {
+        if(NULL != tokenReply->str) {
+            pUser->token = tokenReply->str;
+        }
+        freeReplyObject(tokenReply);
+    }
+    // 取得roomId
+    redisReply * roomIdReply = (redisReply*)redisCommand(rdConnect,RD_GET_ONLINE_USER_INFO_BY_KEY,uid,RD_USER_ROOMID_KEY);
+    if(NULL != roomIdReply )  {
+        if(roomIdReply->integer >= 0) {
+            pUser->roomId = atol(roomIdReply->str);
+        }
+        freeReplyObject(roomIdReply);
+    }
+    pUser->uid = uid;
+    return 0;
+}
+
+// 根据fd找用户
+int OnlineUserService::GetOnlineUserByFd(XCUser * pUser,int fd){
+    int ret = 0;
+    if(NULL == pUser || 0 >= fd) {
+        ret = -1;
+        return ret;
+    }
+    vector<XCUser *> usersVector;
+    for(int  i = 0; i < usersVector.size();i++) {
+        if(NULL != usersVector[i] && fd == usersVector[i]->fd) {
+            pUser->uid = usersVector[i]->uid;
+            pUser->roomId = usersVector[i]->roomId;
+            pUser->fd = usersVector[i]->fd;
+            pUser->token = usersVector[i]->token;
+            pUser->name = usersVector[i]->name;
+        }
+        // 销毁对象
+        if(NULL!=usersVector[i]) {
+            delete usersVector[i];
+            usersVector[i] = 0;
+        }
+    }
+    return ret;
+
+}
+//取得所有在线用户
 int OnlineUserService::GetAllOnlineUsers(vector<XCUser*> * users /* in */) {
     int ret = 0;
     if(NULL == users) {
