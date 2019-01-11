@@ -117,11 +117,11 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                         }
                         vector<int> fds;
                         // 取出fd
-                        for(int i = 0;users.size();i++) {
+                        for(int i = 0;i < users.size();i++) {
                            if(NULL != users[i]) {
                                fds.push_back(users[i]->fd);
                                delete users[i];
-                               users[i] = NULL;
+                                users[i] = NULL;
                            }
                         }
                         BroadcastChatMessage(&chatMsg,fds);
@@ -248,7 +248,10 @@ void XCManager::BroadcastChatMessage(void * content,vector<int> fds) {
     unsigned char data[MAXLINE];
     int datalen;
     Pack(data, &datalen ,length ,ROOM_SERVER_ACK::CHAT_MESSAGE_ACK,buf);
-    tcp_poll_server_broadcast_data(serverHandler,data,datalen);
+    for(int i = 0;i < fds.size();i++) {
+        tcp_poll_server_send_data(fds[i],data,datalen);
+    }
+//    tcp_poll_server_broadcast_data(serverHandler,data,datalen);
 }
 
 // 广播消息

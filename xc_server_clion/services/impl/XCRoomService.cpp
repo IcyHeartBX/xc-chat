@@ -110,11 +110,10 @@ int XCRoomService::GetRoomAllUsers(vector<XCUser*> * users,int64_t roomId) {
     vector<int64_t> userIdVector;
     if(NULL != ukReply && ukReply->type == REDIS_REPLY_ARRAY) {
         for (int i = 0; i <ukReply->elements; i++) {
-            userIdVector.push_back(ukReply->element[i]->integer);
+            userIdVector.push_back(atol(ukReply->element[i]->str));
         }
         freeReplyObject(ukReply);
     }
-
     // 用用户取得所有用户
     for(int i = 0;i < userIdVector.size();i++) {
         XCUser * user = new XCUser;

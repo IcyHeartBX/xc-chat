@@ -12,6 +12,7 @@ class XCRoomPresenter : RoomServerListener{
     val PORT:Int = 7777
     var roomView:IXCRoomView? = null
     var userName:String="未命名"
+    var userId:Long = 7777
     init {
         xcManager.setServerAddress(IP,PORT)
         xcManager.setRoomServerListener(this)
@@ -24,14 +25,14 @@ class XCRoomPresenter : RoomServerListener{
      * 连接服务器
      */
     fun connectServer() {
-        xcManager.connect(7777, userName,10000,"token")
+        xcManager.connect(userId, userName,10000,"token")
     }
 
     /**
      * 发送聊天消息
      */
     fun sendMsg(msg:String) {
-        xcManager.sendChatMsg(777,userName,"img",msg)
+        xcManager.sendChatMsg(userId,userName,"img",msg)
     }
 
     override fun onServerStateInfo(info: String) {
