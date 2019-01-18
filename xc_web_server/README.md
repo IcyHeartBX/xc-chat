@@ -14,7 +14,7 @@
 ## 4、创建`bean`类
 用户bean:`XCUser`
 
-## 5、创建`dao`接口
+## 5、创建持久层`dao`接口
 `UserRepository`
 ```java
 package com.pix.xcwebserver.dao;
@@ -26,9 +26,13 @@ public interface UserRepository extends JpaRepository<XCUser,Integer> {
 }
 
 ```
-## 6、创建`service`
+## 6、创建业务层`service`
+`IUserServcie`
 
+## 7、控制层示例
+`XCUserController`
 
+## 
 # 附录
 ## `sql创建脚本`
 ### 1、用户表脚本
