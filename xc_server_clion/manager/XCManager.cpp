@@ -31,12 +31,10 @@ XCManager * XCManager::GetInstance(){
 
 void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
     try {
-        //cout<<"FUNC XCManager::OnRecvServerData(),RUN..."<<endl;
         // 包长度
         unsigned short dlen = convert_WORD_BE_2_LE(*((unsigned short *)data));
         // 包类型
         unsigned short cmd =convert_WORD_BE_2_LE(*((unsigned short*) (data + 2)));
-        //printf("FUNC ServerRecvCallback(),buf[20]:%c,len:%d,datalength:%d,cmd:%d\n",data[20],len,dlen,cmd);
 
         switch (cmd) {
             case ROOM_SERVER::ALIVE: // 心跳 0x00
@@ -128,7 +126,6 @@ void XCManager::OnRecvServerData(int fd,unsigned char * data ,int len) {
                     }
                 }
                 break;
-
         }
     } catch (...) {
         cout<<"XCManager::OnRecvServerData(),error"<<endl;
@@ -251,7 +248,6 @@ void XCManager::BroadcastChatMessage(void * content,vector<int> fds) {
     for(int i = 0;i < fds.size();i++) {
         tcp_poll_server_send_data(fds[i],data,datalen);
     }
-//    tcp_poll_server_broadcast_data(serverHandler,data,datalen);
 }
 
 // 广播消息
