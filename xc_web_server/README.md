@@ -13,6 +13,8 @@
 
 ## 4、创建`bean`类
 用户bean:`XCUser`
+- id主键注解：https://blog.csdn.net/heatdeath/article/details/79841171
+
 
 ## 5、创建持久层`dao`接口
 `UserRepository`
@@ -53,3 +55,7 @@ public interface UserRepository extends JpaRepository<XCUser,Integer> {
    -- 插入测试数据
    INSERT INTO t_xc_user(name,email,password,level,token) VALUES('pix','pixboly@gmail.com','',100,'');
 ```
+
+
+# 参考
+https://blog.csdn.net/zhizhuodewo6/article/details/81365516

@@ -1,12 +1,9 @@
 package com.pix.xcwebserver.controller;
 
 import com.pix.xcwebserver.bean.XCUser;
-import com.pix.xcwebserver.dao.UserRepository;
-import com.pix.xcwebserver.factory.XCUserServiceFractory;
 import com.pix.xcwebserver.service.IUserService;
-import com.pix.xcwebserver.service.impl.UserServiceImpl;
 import com.pix.xcwebserver.utils.RSPSUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.pix.xcwebserver.utils.TextUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -39,4 +36,56 @@ public class XCUserController {
     public String index() {
         return "Hello SprintBoot 22222";
     }
+
+    /**
+     * 用户注册接口
+     * 规则：用户输入用户邮箱，昵称，密码，必填项进行注册
+     * 邮箱：
+     *      检验邮箱正确性，是否存在
+     * 昵称：
+     *      昵称不能为空，最多32个字符，超过自动截取
+     *
+     * @param email 邮箱
+     * @param name 名称
+     * @param password 密码
+     * @return
+     */
+    @RequestMapping("/register")
+    public Map<String,Object> userRegister(String email,String name,String password) {
+        int returnCode = 0;
+        // 空检查
+        if(TextUtils.isEmpty(email) || TextUtils.isEmpty(name) || TextUtils.isEmpty(password)) {
+            returnCode = -1;
+            return RSPSUtils.rsp(returnCode,null,"参数错误！");
+        }
+        // 检测邮箱正确性
+        String mailPatten = "[A-Za-z\\d]+([-_.][A-Za-z\\d]+)*@([A-Za-z\\d]+[-.])+[A-Za-z\\d]{2,4}";
+        if(null == email || !email.matches(mailPatten)) {
+            returnCode = -2;
+            return RSPSUtils.rsp(returnCode,null,"邮箱格式不正确!");
+        }
+        if(null == name || "".equals(name.trim())) {
+            returnCode = -3;
+            return RSPSUtils.rsp(returnCode,null,"昵称不能为空");
+        }
+        if(null == password || "".equals(password.trim()) || 32 != password.length()) {
+            returnCode = -4;
+            return RSPSUtils.rsp(returnCode,null,"密码格式不正确");
+        }
+        // 进行注册
+        if(null != userService) {
+            return RSPSUtils.rsp(0,userService.addUser(email,name,password),"注册成功!");
+        }
+        return RSPSUtils.rsp(-100,null,"服务器内部错误！");
+    }
+
+    @RequestMapping("/deleteall")
+    public Map<String,Object> deleteAll() {
+        // 进行注册
+        if(null != userService && userService.deleteAllUser()) {
+            return RSPSUtils.rsp(0,null,"删除成功！");
+        }
+        return RSPSUtils.rsp(-100,null,"服务器内部错误！");
+    }
+
 }

@@ -1,13 +1,12 @@
 package com.pix.xcwebserver.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "t_xc_user")
 public class XCUser {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer uid;
     private String name;
     private String email;
@@ -17,6 +16,10 @@ public class XCUser {
     private Integer sex;
 
     public XCUser() {
+    }
+
+    public XCUser(Integer uid) {
+        this.uid = uid;
     }
 
     public Integer getUid() {
