@@ -6,7 +6,7 @@
     <string name="li_room_share_success_tip">分享了主播的直播，觉得主播太美啦~</string>
     <string name="li_room_share_success">I have shared this Anchor\'s live stream, I think the Anchor is great!</string>
     <string name="li_room_become_room_manage">成为了主播的房间管理员</string>
-    <string name="li_room_tip_systems"> 系统消息 : </string>
+    <string name="li_room_tip_systems">系统消息 :</string>
     <string name="li_room_name_default">范爷</string>
     <string name="li_room_tip_gift_one">送了一个</string>
     <string name="li_room_tip_gift">送了一个新礼物（更新才能看礼物效果哦）！</string>

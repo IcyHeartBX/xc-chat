@@ -9,7 +9,7 @@
 - `xc_server_clion`:`C++`项目写的服务端，用`CLion IDE`创建的项目。在`MAC OS和Linux`下编译通过，`Windows`没有试，应该也可以吧！
 - `XCAndroid`:是用Android写的聊天室客户端
 
-## 1、服务器端
+## 1、聊天服务器端
 
 服务器端口:7777
 
@@ -35,9 +35,11 @@
 
 执行项目中`protoc/create_proto_file.sh`脚本即可。
 
+## 2、Web服务器端
 
 
-## 2、Android客户端
+
+## 3、Android客户端
 
 初步完成了聊天室功能，多个用户可进入聊天室，实时聊天
 

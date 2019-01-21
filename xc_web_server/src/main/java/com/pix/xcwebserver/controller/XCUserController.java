@@ -60,7 +60,6 @@ public class XCUserController {
             return RSPSUtils.rsp(returnCode,null,"参数错误！");
         }
         // 检测邮箱正确性
-
         if(null == email || !email.matches(ConstUtils.MAIL_PATTEN)) {
             returnCode = -2;
             return RSPSUtils.rsp(returnCode,null,"邮箱格式不正确!");

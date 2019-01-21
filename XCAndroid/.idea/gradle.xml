@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/modules" />
+            <option value="$PROJECT_DIR$/modules/HttpLibrary" />
             <option value="$PROJECT_DIR$/modules/XCServerLibrary" />
           </set>
         </option>
