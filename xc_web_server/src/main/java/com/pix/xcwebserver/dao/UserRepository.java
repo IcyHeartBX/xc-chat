@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<XCUser,Integer> {
+    XCUser findByEmail(String email);
 }

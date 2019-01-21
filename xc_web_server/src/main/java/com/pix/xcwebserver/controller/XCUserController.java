@@ -2,6 +2,7 @@ package com.pix.xcwebserver.controller;
 
 import com.pix.xcwebserver.bean.XCUser;
 import com.pix.xcwebserver.service.IUserService;
+import com.pix.xcwebserver.utils.ConstUtils;
 import com.pix.xcwebserver.utils.RSPSUtils;
 import com.pix.xcwebserver.utils.TextUtils;
 import org.springframework.stereotype.Controller;
@@ -59,8 +60,8 @@ public class XCUserController {
             return RSPSUtils.rsp(returnCode,null,"参数错误！");
         }
         // 检测邮箱正确性
-        String mailPatten = "[A-Za-z\\d]+([-_.][A-Za-z\\d]+)*@([A-Za-z\\d]+[-.])+[A-Za-z\\d]{2,4}";
-        if(null == email || !email.matches(mailPatten)) {
+
+        if(null == email || !email.matches(ConstUtils.MAIL_PATTEN)) {
             returnCode = -2;
             return RSPSUtils.rsp(returnCode,null,"邮箱格式不正确!");
         }
@@ -72,6 +73,10 @@ public class XCUserController {
             returnCode = -4;
             return RSPSUtils.rsp(returnCode,null,"密码格式不正确");
         }
+        if(null != userService.hasUserByMail(email)) {
+            returnCode = -5;
+            return RSPSUtils.rsp(returnCode,null,"邮箱已注册!");
+        }
         // 进行注册
         if(null != userService) {
             return RSPSUtils.rsp(0,userService.addUser(email,name,password),"注册成功!");
@@ -79,6 +84,10 @@ public class XCUserController {
         return RSPSUtils.rsp(-100,null,"服务器内部错误！");
     }
 
+    /**
+     * 删除所有用户
+     * @return
+     */
     @RequestMapping("/deleteall")
     public Map<String,Object> deleteAll() {
         // 进行注册
@@ -86,6 +95,34 @@ public class XCUserController {
             return RSPSUtils.rsp(0,null,"删除成功！");
         }
         return RSPSUtils.rsp(-100,null,"服务器内部错误！");
+    }
+
+    @RequestMapping("/login")
+    public Map<String,Object> login(String loginparam,String password) {
+        int ret = 0;
+        if(TextUtils.isEmpty(loginparam)) {
+            ret = -1;
+            return RSPSUtils.rsp(ret,null,"参数有误！");
+        }
+        XCUser user = null;
+        if(loginparam.matches(ConstUtils.MAIL_PATTEN)) { // 是邮箱
+            user = userService.getUserByMail(loginparam);
+
+        }
+        else if(loginparam.matches("\\d+")) {    // 是id
+            int uid = Integer.parseInt(loginparam);
+            user = userService.getUserById(uid);
+        }
+        if(null == user) {
+            return RSPSUtils.rsp(-2,null,"用户不存在!");
+
+        }
+        if(password.equals(user.getPassword())) {
+            return RSPSUtils.rsp(0,user,"登录成功!");
+        }
+        else {
+            return RSPSUtils.rsp(-2,null,"密码错误!");
+        }
     }
 
 }

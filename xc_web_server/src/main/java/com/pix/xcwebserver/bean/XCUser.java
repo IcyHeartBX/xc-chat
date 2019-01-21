@@ -11,9 +11,9 @@ public class XCUser {
     private String name;
     private String email;
     private String password;
-    private Integer level;
-    private String token;
-    private Integer sex;
+    private Integer level = 0;
+    private String token = "";
+    private Integer sex = 0;
 
     public XCUser() {
     }
@@ -60,6 +60,9 @@ public class XCUser {
 
     public void setLevel(Integer level) {
         this.level = level;
+        if(null == level) {
+            level = 0;
+        }
     }
 
     public String getToken() {
@@ -68,6 +71,9 @@ public class XCUser {
 
     public void setToken(String token) {
         this.token = token;
+        if(null == token) {
+            this.token = "";
+        }
     }
 
     public Integer getSex() {
@@ -76,5 +82,8 @@ public class XCUser {
 
     public void setSex(Integer sex) {
         this.sex = sex;
+        if(null == sex) {
+            this.sex = 0;
+        }
     }
 }

@@ -28,4 +28,26 @@ public interface IUserService {
      * @return
      */
     public boolean deleteAllUser();
+
+    /**
+     *
+     * @param email
+     * @return 如果存在，返回用户信息，如果不存在返回null
+     */
+    public XCUser getUserByMail(String email);
+
+    /**取得用信息，根据id
+     * @param uid
+     * @return如果存在，返回用户完整信息，如果不存在返回null
+     */
+    public XCUser getUserById(int uid);
+
+
+
+    /**
+     *
+     * @param email
+     * @return
+     */
+    public XCUser hasUserByMail(String email);
 }
