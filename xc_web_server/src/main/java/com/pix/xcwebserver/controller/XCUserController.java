@@ -84,18 +84,18 @@ public class XCUserController {
         return RSPSUtils.rsp(-100,null,"服务器内部错误！");
     }
 
-    /**
-     * 删除所有用户
-     * @return
-     */
-    @RequestMapping("/deleteall")
-    public Map<String,Object> deleteAll() {
-        // 进行注册
-        if(null != userService && userService.deleteAllUser()) {
-            return RSPSUtils.rsp(0,null,"删除成功！");
-        }
-        return RSPSUtils.rsp(-100,null,"服务器内部错误！");
-    }
+//    /**
+//     * 删除所有用户
+//     * @return
+//     */
+//    @RequestMapping("/deleteall")
+//    public Map<String,Object> deleteAll() {
+//        // 进行注册
+//        if(null != userService && userService.deleteAllUser()) {
+//            return RSPSUtils.rsp(0,null,"删除成功！");
+//        }
+//        return RSPSUtils.rsp(-100,null,"服务器内部错误！");
+//    }
 
     @RequestMapping("/login")
     public Map<String,Object> login(String loginparam,String password) {
