@@ -19,7 +19,7 @@ abstract class RxSubscribe<T> : Observer<BaseModel<T>> {
 
     protected abstract fun onSuccess(t: T?)
 
-    protected fun onFailed(code: Int, msg: String?) {}
+    protected abstract fun onFailed(code: Int, msg: String?)
 
     override fun onSubscribe(@NonNull d: Disposable) {
         // 比如显示加载中对话框

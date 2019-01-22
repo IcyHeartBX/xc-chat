@@ -72,7 +72,7 @@ public class UserServiceImpl implements IUserService {
             return null;
         }
         if(null != userRepository) {
-            userRepository.findById(uid);
+            return userRepository.findById(uid).get();
         }
         return null;
     }

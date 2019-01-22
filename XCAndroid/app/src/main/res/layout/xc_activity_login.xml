@@ -6,5 +6,55 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".login.LoginActivity">
+    <LinearLayout
+            android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账户:"
+        />
+        <EditText
+                android:id="@+id/et_account"
+            android:gravity="center"
+            android:hint="输入账户ID或邮箱"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/ll_password"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_account"
+            >
+        <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="密码:"
+        />
+        <EditText
+                android:id="@+id/et_password"
+                android:gravity="center"
+                android:hint="输入您的密码"
+                android:inputType="textPassword"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent" android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_password"
+            android:gravity="center"
+            android:text="登录"
+            />
+
 
 </android.support.constraint.ConstraintLayout>
