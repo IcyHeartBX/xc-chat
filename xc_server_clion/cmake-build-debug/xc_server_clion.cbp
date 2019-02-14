@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug"/>
+				<Option working_dir="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug"/>
+				<Option working_dir="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug"/>
+				<Option working_dir="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="xc_server_clion">
-				<Option output="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/xc_server_clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug"/>
+				<Option output="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/xc_server_clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 xc_server_clion"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 xc_server_clion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="xc_server_clion/fast">
-				<Option output="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/xc_server_clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug"/>
+				<Option output="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/xc_server_clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,71 +77,71 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 xc_server_clion/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 xc_server_clion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/consts/RedisConsts.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/consts/RedisConsts.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/define/BeanDefine.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/define/BeanDefine.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/main.cpp">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/main.cpp">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.cpp">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/manager/XCManager.cpp">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/manager/XCManager.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/manager/XCManager.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.cc">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/protoc/xc_protoc.pb.cc">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/protoc/xc_protoc.pb.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IOnlineUserService.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/services/IOnlineUserService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/IRoomService.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/services/IRoomService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/services/impl/OnlineUserService.cpp">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/OnlineUserService.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/services/impl/OnlineUserService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/services/impl/XCRoomService.cpp">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/services/impl/XCRoomService.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/services/impl/XCRoomService.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.c">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.c">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/tcp/tcp_poll_server.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/tcp/tcp_poll_server.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/NetUtils.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/utils/NetUtils.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackConsts.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/utils/PackConsts.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/PackUtils.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/utils/PackUtils.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/utils/TypeUtils.h">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/utils/TypeUtils.h">
 			<Option target="xc_server_clion"/>
 		</Unit>
-		<Unit filename="/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/CMakeLists.txt">
+		<Unit filename="/Volumes/Data/dev/code/xc-chat/xc_server_clion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

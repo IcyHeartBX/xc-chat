@@ -1,15 +1,12 @@
 package com.pix.xcandroid
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
+import android.support.v7.app.ActionBarDrawerToggle
 import android.view.View
-import android.widget.Toast
-import com.pix.xcandroid.room.XCRoomActivity
-import com.pix.xcserverlibrary.utils.LogUtils
+import com.pix.xcandroid.manager.UserManager
 import kotlinx.android.synthetic.main.activity_main.*
-import java.nio.channels.InterruptedByTimeoutException
+import kotlinx.android.synthetic.main.layout_custom_toolbar.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     val TAG = "MainActivity"
@@ -20,22 +17,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun init() {
-        btn_enter_room.setOnClickListener(this)
+        toolbar.setLogo(R.mipmap.ic_launcher)
+        toolbar.title = "欢迎来到XC聊天室"
+        setSupportActionBar(toolbar)
+        supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        dl_drawer.addDrawerListener(ActionBarDrawerToggle(this,dl_drawer,toolbar,R.string.app_name, R.string.app_name))
+
+        // 设置个人信息
+        tv_uid.text = UserManager.uid
+        tv_name.text = UserManager.name
+        tv_email.text = UserManager.email
     }
 
     override fun onClick(v: View?) {
-        when(v) {
-            btn_enter_room-> {
-                if(TextUtils.isEmpty(et_name.text.toString())) {
-                    Toast.makeText(this,"请输入昵称！",Toast.LENGTH_SHORT).show()
-                    return
-                }
-                var intent = Intent(this,XCRoomActivity::class.java)
-                intent.putExtra(XCRoomActivity.EXT_USER_NAME,et_name.text.toString())
-                startActivity(intent)
-                et_name.setText("")
-            }
-        }
     }
 
     override fun onDestroy() {

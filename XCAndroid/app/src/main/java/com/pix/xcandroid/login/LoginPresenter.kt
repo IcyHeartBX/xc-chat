@@ -4,6 +4,7 @@ import android.util.Log
 import com.pix.http.RxSubscribe
 import com.pix.retrofitrxjavahttp.http.XCRequest
 import com.pix.xcandroid.bean.LoginResult
+import com.pix.xcandroid.manager.UserManager
 
 class LoginPresenter(val view:ILoginView) {
     val TAG = "LoginPresenter"
@@ -11,6 +12,12 @@ class LoginPresenter(val view:ILoginView) {
         XCRequest.login(account,password,object : RxSubscribe<LoginResult>() {
             override fun onSuccess(t: LoginResult?) {
                 Log.d(TAG,"onSuccess(),${t.toString()}")
+                UserManager.uid = t?.uid.toString()
+                UserManager.email = t!!.email
+                UserManager.level = t?.level
+                UserManager.name = t!!.name
+                UserManager.sex = t?.sex
+                UserManager.token = t!!.token
                 view.loginSuccess()
             }
 

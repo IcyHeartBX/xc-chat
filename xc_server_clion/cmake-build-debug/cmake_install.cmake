@@ -1,4 +1,4 @@
-# Install script for directory: /Volumes/Data/dev/code/demo/xc-chat/xc_server_clion
+# Install script for directory: /Volumes/Data/dev/code/xc-chat/xc_server_clion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Volumes/Data/dev/code/demo/xc-chat/xc_server_clion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Volumes/Data/dev/code/xc-chat/xc_server_clion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
