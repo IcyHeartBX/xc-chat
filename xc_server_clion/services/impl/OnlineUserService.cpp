@@ -94,7 +94,7 @@ int OnlineUserService::RemoveOnlineUserByFD(int fd) {
     return 0;
 }
 // 根据用户id取得用户信息
-int OnlineUserService::GetOnlineUserById(XCUser * pUser,long long uid) {
+int OnlineUserService::GetOnlineUserById(XCUser * pUser,int64_t uid) {
     cout<<"OnlineUserService::GetOnlineUserById(),RUN..."<<endl;
     int ret = 0;
     if(NULL == pUser) {
